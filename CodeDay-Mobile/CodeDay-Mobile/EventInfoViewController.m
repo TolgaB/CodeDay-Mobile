@@ -54,6 +54,13 @@
 - (IBAction)buyTicketButtonPressed:(id)sender {
 }
 - (IBAction)sponsorButtonPressed:(id)sender {
+    NSMutableArray *sponsorArray = [retrievedData objectForKeyedSubscript:@"sponsors"];
+    for (int l = 0; l < sponsorArray.count; l ++) {
+        NSDictionary *tempEventInfo = sponsorArray[l];
+        NSLog(@"hello");
+        
+    }
+    NSLog(@"manual");
 }
 
 - (IBAction)contactButtonPressed:(id)sender {
