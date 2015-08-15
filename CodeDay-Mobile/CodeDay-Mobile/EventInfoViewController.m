@@ -38,6 +38,27 @@
     navigationItem.title = [retrievedData objectForKeyedSubscript:@"name"];
     [navBar pushNavigationItem:navigationItem animated:NO];
     [self.view addSubview:navBar];
+    
+}
+- (IBAction)scheduleButtonPressed:(id)sender {
+    [self performSegueWithIdentifier:@"goToSchedule" sender:@"self"];
+}
+
+- (IBAction)emergencyButtonPressed:(id)sender {
+}
+
+- (IBAction)buyTicketButtonPressed:(id)sender {
+}
+- (IBAction)sponsorButtonPressed:(id)sender {
+}
+
+- (IBAction)contactButtonPressed:(id)sender {
+}
+- (IBAction)waiverButtonPressed:(id)sender {
+}
+- (IBAction)locationButtonPressed:(id)sender {
+}
+- (IBAction)awardsButton:(id)sender {
 }
 
 @end

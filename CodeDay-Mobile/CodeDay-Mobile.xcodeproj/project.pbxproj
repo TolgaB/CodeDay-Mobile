@@ -16,6 +16,7 @@
 		FDA57E5F1B7EEE6C00691307 /* CodeDay_MobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E5E1B7EEE6C00691307 /* CodeDay_MobileTests.m */; };
 		FDA57E6C1B7EF86F00691307 /* AppCommunicate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E6B1B7EF86F00691307 /* AppCommunicate.m */; };
 		FDA57E6F1B7F042800691307 /* EventInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E6E1B7F042800691307 /* EventInfoViewController.m */; };
+		FDA57E721B7F171400691307 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E711B7F171400691307 /* ScheduleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		FDA57E6B1B7EF86F00691307 /* AppCommunicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommunicate.m; sourceTree = "<group>"; };
 		FDA57E6D1B7F042800691307 /* EventInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventInfoViewController.h; sourceTree = "<group>"; };
 		FDA57E6E1B7F042800691307 /* EventInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInfoViewController.m; sourceTree = "<group>"; };
+		FDA57E701B7F171400691307 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		FDA57E711B7F171400691307 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				FDA57E6D1B7F042800691307 /* EventInfoViewController.h */,
 				FDA57E6E1B7F042800691307 /* EventInfoViewController.m */,
 				FDA57E4C1B7EEE6C00691307 /* Main.storyboard */,
+				FDA57E701B7F171400691307 /* ScheduleViewController.h */,
+				FDA57E711B7F171400691307 /* ScheduleViewController.m */,
 				FDA57E4F1B7EEE6C00691307 /* Images.xcassets */,
 				FDA57E511B7EEE6C00691307 /* LaunchScreen.xib */,
 				FDA57E421B7EEE6C00691307 /* Supporting Files */,
@@ -230,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDA57E4B1B7EEE6C00691307 /* ViewController.m in Sources */,
+				FDA57E721B7F171400691307 /* ScheduleViewController.m in Sources */,
 				FDA57E6F1B7F042800691307 /* EventInfoViewController.m in Sources */,
 				FDA57E6C1B7EF86F00691307 /* AppCommunicate.m in Sources */,
 				FDA57E481B7EEE6C00691307 /* AppDelegate.m in Sources */,
