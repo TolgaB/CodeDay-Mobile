@@ -17,6 +17,7 @@
 		FDA57E6C1B7EF86F00691307 /* AppCommunicate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E6B1B7EF86F00691307 /* AppCommunicate.m */; };
 		FDA57E6F1B7F042800691307 /* EventInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E6E1B7F042800691307 /* EventInfoViewController.m */; };
 		FDA57E721B7F171400691307 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E711B7F171400691307 /* ScheduleViewController.m */; };
+		FEE87315C6297C2277CFB5BB /* libPods-CodeDay-Mobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2173FCC5DB7C4AA793F490 /* libPods-CodeDay-Mobile.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F8C250F1B7746D573D5D7A7 /* Pods-CodeDay-Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeDay-Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeDay-Mobile/Pods-CodeDay-Mobile.release.xcconfig"; sourceTree = "<group>"; };
+		2A139E743E23C178EB1CF79E /* Pods-CodeDay-Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeDay-Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeDay-Mobile/Pods-CodeDay-Mobile.debug.xcconfig"; sourceTree = "<group>"; };
+		8A2173FCC5DB7C4AA793F490 /* libPods-CodeDay-Mobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodeDay-Mobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA57E3F1B7EEE6C00691307 /* CodeDay-Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodeDay-Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA57E431B7EEE6C00691307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDA57E441B7EEE6C00691307 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE87315C6297C2277CFB5BB /* libPods-CodeDay-Mobile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +74,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AFCC82C5302D1B9B961B60F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A2173FCC5DB7C4AA793F490 /* libPods-CodeDay-Mobile.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		23536FCCB8F8493BEF5C6CF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A139E743E23C178EB1CF79E /* Pods-CodeDay-Mobile.debug.xcconfig */,
+				1F8C250F1B7746D573D5D7A7 /* Pods-CodeDay-Mobile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FDA57E361B7EEE6C00691307 = {
 			isa = PBXGroup;
 			children = (
 				FDA57E411B7EEE6C00691307 /* CodeDay-Mobile */,
 				FDA57E5B1B7EEE6C00691307 /* CodeDay-MobileTests */,
 				FDA57E401B7EEE6C00691307 /* Products */,
+				23536FCCB8F8493BEF5C6CF0 /* Pods */,
+				1AFCC82C5302D1B9B961B60F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDA57E621B7EEE6C00691307 /* Build configuration list for PBXNativeTarget "CodeDay-Mobile" */;
 			buildPhases = (
+				8324655992CBE59C58D2D0C5 /* Check Pods Manifest.lock */,
 				FDA57E3B1B7EEE6C00691307 /* Sources */,
 				FDA57E3C1B7EEE6C00691307 /* Frameworks */,
 				FDA57E3D1B7EEE6C00691307 /* Resources */,
+				F53EF2D076B6B3AE9E90F4F2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,6 +254,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8324655992CBE59C58D2D0C5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F53EF2D076B6B3AE9E90F4F2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeDay-Mobile/Pods-CodeDay-Mobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FDA57E3B1B7EEE6C00691307 /* Sources */ = {
@@ -365,6 +424,7 @@
 		};
 		FDA57E631B7EEE6C00691307 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A139E743E23C178EB1CF79E /* Pods-CodeDay-Mobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "CodeDay-Mobile/Info.plist";
@@ -375,6 +435,7 @@
 		};
 		FDA57E641B7EEE6C00691307 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F8C250F1B7746D573D5D7A7 /* Pods-CodeDay-Mobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "CodeDay-Mobile/Info.plist";
@@ -436,6 +497,7 @@
 				FDA57E641B7EEE6C00691307 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDA57E651B7EEE6C00691307 /* Build configuration list for PBXNativeTarget "CodeDay-MobileTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +506,7 @@
 				FDA57E671B7EEE6C00691307 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

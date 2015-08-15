@@ -1,0 +1,11 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'CodeDay-Mobile' do
+pod 'KLCPopup', :head
+end
+
+target 'CodeDay-MobileTests' do
+
+end
+

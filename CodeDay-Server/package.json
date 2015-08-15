@@ -1,0 +1,33 @@
+{
+
+	"name": "CodeDay-Server",
+	"version": "0.1.0",
+
+	"dependencies": {
+		"express": "latest",
+		"request": "latest",
+		"q": "latest",
+		"body-parser": "latest",
+		"compression": "latest",
+		"connect-timeout": "latest",
+		"cookie-parser": "latest",
+		"cookie-session": "latest",
+		"csurf": "latest",
+		"errorhandler": "latest",
+		"express-session": "latest",
+		"method-override": "latest",
+		"morgan": "latest",
+		"response-time": "latest",
+		"serve-favicon": "latest",
+		"serve-index": "latest",
+		"serve-static": "latest",
+		"vhost": "latest",
+		"mongodb": "latest"
+	},
+
+	"engines": {
+		"node": "0.8.x",
+		"npm": "1.1.x"
+	}
+
+}
