@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodeDay-Mobile/EventInfoViewController.m"
-            timestampString = "461336506.245142"
+            timestampString = "461338608.482092"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "-retrieveInfo"
             landmarkType = "5">
          </BreakpointContent>

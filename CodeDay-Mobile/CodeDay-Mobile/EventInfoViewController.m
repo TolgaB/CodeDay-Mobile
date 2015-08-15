@@ -9,6 +9,7 @@
 #import "EventInfoViewController.h"
 #import "AppCommunicate.h"
 #import "KLCPopup.h"
+#import <MapKit/MapKit.h>
 @interface EventInfoViewController ()
 @property (nonatomic, strong)AppCommunicate *communicate;
 @end
@@ -101,10 +102,27 @@
     }
 }
 - (IBAction)locationButtonPressed:(id)sender {
-    NSDictionary *locationDictionary = [retrievedData objectForKeyedSubscript:@"location"];
+    NSDictionary *regionDictionary = [retrievedData objectForKeyedSubscript:@"region"];
+    NSDictionary *locationDictionary = [regionDictionary objectForKeyedSubscript:@"location"];
     NSString *latitude = [locationDictionary objectForKeyedSubscript:@"lat"];
     NSString *longitude = [locationDictionary objectForKeyedSubscript:@"lng"];
     NSLog(@"manual");
+    UIView* contentView = [[UIView alloc] init];
+    contentView.backgroundColor = [UIColor whiteColor];
+    contentView.frame = CGRectMake(0, 0, 250, 400);
+    MKMapView *mapView = [[MKMapView alloc] initWithFrame:contentView.frame];
+    CLLocationCoordinate2D c2D = CLLocationCoordinate2DMake([latitude doubleValue], [longitude doubleValue]);
+    MKPointAnnotation *myAnnotation = [[MKPointAnnotation alloc] init];
+    myAnnotation.coordinate = c2D;
+    myAnnotation.title = @"CodeDay";
+    [mapView addAnnotation:myAnnotation];
+    mapView.region = MKCoordinateRegionMakeWithDistance(c2D, 15000, 15000);
+    [contentView addSubview:mapView];
+    KLCPopup* popup = [KLCPopup popupWithContentView:contentView];
+    [popup show];
+    
+
+    
 }
 - (IBAction)awardsButton:(id)sender {
 }
