@@ -228,8 +228,7 @@
 
     
 }
-- (IBAction)awardsButton:(id)sender {
-}
+
 - (BOOL)prefersStatusBarHidden {
     //This hides the annoyign top status bar
     return YES;

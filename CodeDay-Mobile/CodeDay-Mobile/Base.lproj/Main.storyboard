@@ -101,24 +101,6 @@
                                     <action selector="buyTicketButtonPressed:" destination="dYF-3e-f4U" eventType="touchUpInside" id="V5U-yG-cfK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QhJ-R2-m2a">
-                                <rect key="frame" x="22" y="431" width="118" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Sponsors">
-                                    <color key="titleColor" red="0.53725490200000003" green="0.75686274509999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="sponsorButtonPressed:" destination="dYF-3e-f4U" eventType="touchUpInside" id="oSQ-T5-DqD"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bg0-YF-7iX">
                                 <rect key="frame" x="186" y="299" width="118" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -155,12 +137,12 @@
                                     <action selector="contactButtonPressed:" destination="dYF-3e-f4U" eventType="touchUpInside" id="KKR-Uv-79z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OHq-po-WTh">
-                                <rect key="frame" x="186" y="431" width="118" height="87"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QhJ-R2-m2a">
+                                <rect key="frame" x="101" y="422" width="118" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Donate">
+                                <state key="normal" title="Sponsors">
                                     <color key="titleColor" red="0.53725490200000003" green="0.75686274509999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -170,14 +152,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="awardsButton:" destination="dYF-3e-f4U" eventType="touchUpInside" id="2MF-Tr-6gT"/>
+                                    <action selector="sponsorButtonPressed:" destination="dYF-3e-f4U" eventType="touchUpInside" id="oSQ-T5-DqD"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.53725490196078429" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="awards" destination="OHq-po-WTh" id="nVf-DI-ZFU"/>
                         <outlet property="buyticket" destination="p3M-cf-kR2" id="Gw6-kg-HfM"/>
                         <outlet property="contact" destination="FDn-OT-nAe" id="Jw2-2K-teR"/>
                         <outlet property="emergency" destination="eBi-OQ-Gka" id="Uem-vi-A9Z"/>
