@@ -46,6 +46,8 @@
 }
 
 - (IBAction)emergencyButtonPressed:(id)sender {
+    NSURL *phoneNumber = [[NSURL alloc] initWithString: @"tel:18882633230"];
+    [[UIApplication sharedApplication] openURL: phoneNumber];
 }
 
 - (IBAction)buyTicketButtonPressed:(id)sender {
@@ -71,6 +73,12 @@
         [contentView addSubview:nameLabel];
         [contentView addSubview:emailLabel];
         [contentView addSubview:phoneLabel];
+    }
+    else {
+        contentView.frame = CGRectMake(0, 0, 200, 80);
+        UILabel *errorLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, 30, 150, 30)];
+        [errorLabel setText:@"No Data Found"];
+        [contentView addSubview:errorLabel];
     }
 
     

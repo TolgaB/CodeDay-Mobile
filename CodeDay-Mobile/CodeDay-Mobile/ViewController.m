@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AppCommunicate.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController ()
 @property (nonatomic, strong)AppCommunicate *communicate;
@@ -21,6 +22,15 @@
     [super viewDidLoad];
     _communicate = [[AppCommunicate alloc] init];
     [self generateRegionButtons];
+    UINavigationBar *navBar = [[UINavigationBar alloc] init];
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat screenWidth = screenRect.size.width;
+    CGFloat screenHeight = screenRect.size.height;
+    [navBar setFrame:CGRectMake(0,0,screenWidth,(screenHeight/13))];
+    UINavigationItem *navigationItem = [[UINavigationItem alloc] init];
+    navigationItem.title =  @"CodeDay";
+    [navBar pushNavigationItem:navigationItem animated:NO];
+    [self.view addSubview:navBar];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -34,14 +44,25 @@
     UIScrollView *mainScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     NSDictionary *retrievedData = [_communicate getRegions];
     NSMutableArray *retrievedDataArray = retrievedData;
-    int lastKnownHeight = 0;
+    int lastKnownHeight = 30;
     for (int i =0 ; i < retrievedDataArray.count; i ++) {
         NSDictionary *tempEventDictionary = retrievedDataArray[i];
         NSDictionary *tempEventCurrent = [tempEventDictionary objectForKeyedSubscript:@"current_event"];
         [listOfEventID addObject:[tempEventCurrent objectForKeyedSubscript:@"id"]];
         NSString *eventName = [tempEventDictionary objectForKeyedSubscript:@"name"];
         NSLog(@"%@", eventName);
-        UIButton *eventButton = [[UIButton alloc] initWithFrame:CGRectMake(40, lastKnownHeight + 80, 300, 30)];
+        UIButton *eventButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 230, lastKnownHeight + 30, 150, 30)];
+        [eventButton.titleLabel setFont:[UIFont fontWithName:@"Thonburi-Light" size:20]];
+        UIView *backGround = [[UIView alloc] initWithFrame:CGRectMake(50, lastKnownHeight + 0, self.view.frame.size.width - 100, 80)];
+        [backGround setBackgroundColor:[UIColor whiteColor]];
+        backGround.layer.masksToBounds = NO;
+        backGround.layer.shadowColor = [UIColor blackColor].CGColor;
+        backGround.layer.shadowOpacity = 0.1f;
+        backGround.layer.shadowOffset = CGSizeMake(2.0f, 2.0f);
+        backGround.layer.shadowRadius = 3.0f;
+        backGround.layer.shouldRasterize = NO;
+        [backGround.layer setShadowOpacity:5];
+        [mainScroll addSubview:backGround];
         eventButton.tag = i;
         [eventButton addTarget:self
                         action:@selector(locationPressed:)
@@ -67,6 +88,10 @@
     NSString *theID = listOfEventID[tag];
     [[NSUserDefaults standardUserDefaults] setObject:theID forKey:@"id"];
     [self performSegueWithIdentifier:@"goToEvent" sender:@"Self"];
+}
+- (BOOL)prefersStatusBarHidden {
+    //This hides the annoyign top status bar
+    return YES;
 }
 
 @end

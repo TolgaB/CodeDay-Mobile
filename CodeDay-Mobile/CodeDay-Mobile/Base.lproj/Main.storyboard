@@ -59,7 +59,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="contactButtonPressed:" destination="dYF-3e-f4U" eventType="touchDown" id="Ojk-Ik-k99"/>
                                     <action selector="emergencyButtonPressed:" destination="dYF-3e-f4U" eventType="touchUpInside" id="xpc-w2-veZ"/>
                                 </connections>
                             </button>
