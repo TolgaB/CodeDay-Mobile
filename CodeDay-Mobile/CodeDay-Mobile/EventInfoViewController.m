@@ -87,13 +87,24 @@
 }
 - (IBAction)waiverButtonPressed:(id)sender {
     if ([retrievedData objectForKeyedSubscript:@"waiver"] != [NSNull null]) {
-        //Bring them to the link
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[retrievedData objectForKeyedSubscript:[retrievedData objectForKeyedSubscript:@"waiver"]]]];
     }
     else {
-       // Pop up no waiver message
+        UIView* contentView = [[UIView alloc] init];
+        contentView.backgroundColor = [UIColor whiteColor];
+        contentView.frame = CGRectMake(0, 0, 200, 80);
+        UILabel *errorLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 25, 150, 30)];
+        [errorLabel setText:@"No Waiver"];
+        [contentView addSubview:errorLabel];
+        KLCPopup* popup = [KLCPopup popupWithContentView:contentView];
+        [popup show];
     }
 }
 - (IBAction)locationButtonPressed:(id)sender {
+    NSDictionary *locationDictionary = [retrievedData objectForKeyedSubscript:@"location"];
+    NSString *latitude = [locationDictionary objectForKeyedSubscript:@"lat"];
+    NSString *longitude = [locationDictionary objectForKeyedSubscript:@"lng"];
+    NSLog(@"manual");
 }
 - (IBAction)awardsButton:(id)sender {
 }
