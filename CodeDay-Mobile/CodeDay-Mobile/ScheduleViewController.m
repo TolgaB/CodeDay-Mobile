@@ -24,6 +24,8 @@
     [navBar setFrame:CGRectMake(0,0,screenWidth,(screenHeight/13))];
     UINavigationItem *navigationItem = [[UINavigationItem alloc] init];
     navigationItem.title =  @"Schedule";
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:self action:@selector(backButtonPressed)];
+    navigationItem.leftBarButtonItem = backButton;;
     [navBar pushNavigationItem:navigationItem animated:NO];
     [self.view addSubview:navBar];
     [self loadData];
@@ -47,12 +49,14 @@
             UILabel *headLabel = [[UILabel alloc] initWithFrame:CGRectMake(120, 40, 300, 30)];
             [headLabel setText:@"Saturday"];
             [mainScroll addSubview:headLabel];
+            [headLabel setTextColor:[UIColor whiteColor]];
         }
         NSDictionary *tempSchedule = saturdayArray[i];
         NSString *timeString = [tempSchedule objectForKeyedSubscript:@"hour"];
         NSString *titleString = [tempSchedule objectForKeyedSubscript:@"title"];
         NSString *finalString = [NSString stringWithFormat:@"%@: %@", timeString, titleString];
         UILabel *timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, currentHeight + 70, 300, 30)];
+        [timeLabel setTextColor:[UIColor whiteColor]];
         currentHeight = currentHeight + 50;
         [timeLabel setText:finalString];
         [mainScroll addSubview:timeLabel];
@@ -63,6 +67,7 @@
             UILabel *headLabel = [[UILabel alloc] initWithFrame:CGRectMake(120, currentHeight + 50, 300, 30)];
             currentHeight = currentHeight + 10;
             [headLabel setText:@"Sunday"];
+            [headLabel setTextColor:[UIColor whiteColor]];
             [mainScroll addSubview:headLabel];
         }
         NSDictionary *tempSchedule = sundayArray[u];
@@ -70,6 +75,7 @@
         NSString *titleString = [tempSchedule objectForKeyedSubscript:@"title"];
         NSString *finalString = [NSString stringWithFormat:@"%@: %@", timeString, titleString];
         UILabel *timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, currentHeight + 70, 300, 30)];
+        [timeLabel setTextColor:[UIColor whiteColor]];
         currentHeight = currentHeight + 50;
         [timeLabel setText:finalString];
         [mainScroll addSubview:timeLabel];
@@ -82,5 +88,12 @@
     
     [self.view addSubview:mainScroll];
     NSLog(@"manual");
+}
+-(void)backButtonPressed {
+    [self performSegueWithIdentifier:@"goToEventFromSchedule" sender:@"self"];
+}
+- (BOOL)prefersStatusBarHidden {
+    //This hides the annoyign top status bar
+    return YES;
 }
 @end

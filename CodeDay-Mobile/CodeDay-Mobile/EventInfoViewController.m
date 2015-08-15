@@ -86,6 +86,12 @@
     [popup show];
 }
 - (IBAction)waiverButtonPressed:(id)sender {
+    if ([retrievedData objectForKeyedSubscript:@"waiver"] != [NSNull null]) {
+        //Bring them to the link
+    }
+    else {
+       // Pop up no waiver message
+    }
 }
 - (IBAction)locationButtonPressed:(id)sender {
 }

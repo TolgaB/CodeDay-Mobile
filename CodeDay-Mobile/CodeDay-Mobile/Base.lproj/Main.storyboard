@@ -191,9 +191,12 @@
                     <view key="view" contentMode="scaleToFill" id="39H-a1-VKp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="aWL-eH-XjF"/>
+                    <connections>
+                        <segue destination="dYF-3e-f4U" kind="modal" identifier="goToEventFromSchedule" id="qlo-ue-XSd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88T-d0-mJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -205,4 +208,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="qlo-ue-XSd"/>
+    </inferredMetricsTieBreakers>
 </document>
