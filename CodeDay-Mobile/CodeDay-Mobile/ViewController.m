@@ -10,12 +10,14 @@
 #import "AppCommunicate.h"
 #import <QuartzCore/QuartzCore.h>
 
+
 @interface ViewController ()
 @property (nonatomic, strong)AppCommunicate *communicate;
 @end
 
 @implementation ViewController {
     NSMutableArray *listOfEventID;
+    Reachability *internetReachableFoo;
 }
 
 - (void)viewDidLoad {
@@ -32,8 +34,42 @@
     navigationItem.titleView = [[UIImageView alloc] initWithImage:image];
     [navBar pushNavigationItem:navigationItem animated:NO];
     [self.view addSubview:navBar];
+    [self testInternetConnection];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+// Checks if we have an internet connection or not
+- (void)testInternetConnection
+{
+    internetReachableFoo = [Reachability reachabilityWithHostname:@"www.google.com"];
+    
+    // Internet is reachable
+    internetReachableFoo.reachableBlock = ^(Reachability*reach)
+    {
+        // Update the UI on the main thread
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+        });
+    };
+    
+    // Internet is not reachable
+    internetReachableFoo.unreachableBlock = ^(Reachability*reach)
+    {
+        // Update the UI on the main thread
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIAlertView *theAlert = [[UIAlertView alloc] initWithTitle:@"No internet"
+                                                               message:@"Connect to internet!"
+                                                              delegate:self
+                                                     cancelButtonTitle:@"OK"
+                                                     otherButtonTitles:nil];
+            [theAlert show];
+        });
+    };
+    
+    [internetReachableFoo startNotifier];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
