@@ -4,11 +4,59 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon29x29@2x.png</key>
+		<data>
+		i27btwx1drr0qQ6sRkFS5hLuXoE=
+		</data>
+		<key>AppIcon29x29@2x~ipad.png</key>
+		<data>
+		i27btwx1drr0qQ6sRkFS5hLuXoE=
+		</data>
+		<key>AppIcon29x29@3x.png</key>
+		<data>
+		fJePc4VLw7aJQvx0I9wfk9dYcjw=
+		</data>
+		<key>AppIcon29x29~ipad.png</key>
+		<data>
+		8zH+rXL59ex/gYFBtMCQVJJcPWo=
+		</data>
+		<key>AppIcon40x40@2x.png</key>
+		<data>
+		NZL0r8uP5SN1fBGdAPf6q63y6Fs=
+		</data>
+		<key>AppIcon40x40@2x~ipad.png</key>
+		<data>
+		NZL0r8uP5SN1fBGdAPf6q63y6Fs=
+		</data>
+		<key>AppIcon40x40@3x.png</key>
+		<data>
+		GgbigIMql6aw/kAbs6tZEE/5vjA=
+		</data>
+		<key>AppIcon40x40~ipad.png</key>
+		<data>
+		nMNVHYCDhVJN93YYVBL6W+gp7vg=
+		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		GgbigIMql6aw/kAbs6tZEE/5vjA=
+		</data>
+		<key>AppIcon60x60@3x.png</key>
+		<data>
+		8CCi9i3funYSZvR+qWnMC5LKCB0=
+		</data>
+		<key>AppIcon76x76@2x~ipad.png</key>
+		<data>
+		apFdf9g5UNEIHNwj2uQZV2OAEcg=
+		</data>
+		<key>AppIcon76x76~ipad.png</key>
+		<data>
+		/KF0yQH9hrJEUwa80IEF0feHfaA=
+		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UX6/U3yFgDcOqY2B1mIbC/LlMeE=
+			hVuwP5iUcc307YQJ4gfgg38dQbI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -17,7 +65,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YeVeAC38ZWPTlC1pzCMGRYHXyBc=
+			XPx5CH++zTiaNwc88G96T/g99J4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,7 +74,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I2XEIiljbYM8pZuYylhmCWfTZDE=
+			mx5OHNuq9pFbC4zXuMlq7hBp4I8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -44,7 +92,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			37BNAzZEtiIN+HH9pGv0NVu6EJs=
+			u/iZL6YPk/0zLlHSAwBBcEbkUAI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -53,7 +101,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cXbMYeNnpSMPzLBg9WYPRbQ5qYQ=
+			tRHGQIkOEXu+Q/evyRtiG/XJKJU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -62,7 +110,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JJv89PvPPQddBUADR+CJaC1t+Cg=
+			64uJVXgy+YAJQEOaCktm/T6X/A8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -71,31 +119,103 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lzxT6SC+uQhYdcvJlEIBMgHfMKo=
+			NhJ2sQ3geIuoFllBOwE02nrtxcw=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>Info.plist</key>
 		<data>
-		cG2w+L5nzePGTyDDuWpBkNQBPxU=
+		N7ThdJNA+OSD3kdX6B0m0MI6Nvk=
+		</data>
+		<key>NoContact.png</key>
+		<data>
+		zYRsatpHKjLUpF2znvklCVBw54M=
+		</data>
+		<key>NoSponsor.png</key>
+		<data>
+		9+w/7pPTvoAAPE6nvzZMv8s70WQ=
+		</data>
+		<key>NoTicket.png</key>
+		<data>
+		pURNFLGYu3mgPe4whW2Swt88PmI=
+		</data>
+		<key>NoWaiver.png</key>
+		<data>
+		P7hW21SyUprx1Ea9DA+IayAMMZE=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>codeday_logo.png</key>
+		<data>
+		22AKLyHj1ALWUY2XCjMJq0r4wZE=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		evviFt+DAraTi8Fl3hoMoaHcGI8=
 		</data>
+		<key>splash.png</key>
+		<data>
+		xQ03wTw0DIpP9VVRO3jBWV6OiIo=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon29x29@2x.png</key>
+		<data>
+		i27btwx1drr0qQ6sRkFS5hLuXoE=
+		</data>
+		<key>AppIcon29x29@2x~ipad.png</key>
+		<data>
+		i27btwx1drr0qQ6sRkFS5hLuXoE=
+		</data>
+		<key>AppIcon29x29@3x.png</key>
+		<data>
+		fJePc4VLw7aJQvx0I9wfk9dYcjw=
+		</data>
+		<key>AppIcon29x29~ipad.png</key>
+		<data>
+		8zH+rXL59ex/gYFBtMCQVJJcPWo=
+		</data>
+		<key>AppIcon40x40@2x.png</key>
+		<data>
+		NZL0r8uP5SN1fBGdAPf6q63y6Fs=
+		</data>
+		<key>AppIcon40x40@2x~ipad.png</key>
+		<data>
+		NZL0r8uP5SN1fBGdAPf6q63y6Fs=
+		</data>
+		<key>AppIcon40x40@3x.png</key>
+		<data>
+		GgbigIMql6aw/kAbs6tZEE/5vjA=
+		</data>
+		<key>AppIcon40x40~ipad.png</key>
+		<data>
+		nMNVHYCDhVJN93YYVBL6W+gp7vg=
+		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		GgbigIMql6aw/kAbs6tZEE/5vjA=
+		</data>
+		<key>AppIcon60x60@3x.png</key>
+		<data>
+		8CCi9i3funYSZvR+qWnMC5LKCB0=
+		</data>
+		<key>AppIcon76x76@2x~ipad.png</key>
+		<data>
+		apFdf9g5UNEIHNwj2uQZV2OAEcg=
+		</data>
+		<key>AppIcon76x76~ipad.png</key>
+		<data>
+		/KF0yQH9hrJEUwa80IEF0feHfaA=
+		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UX6/U3yFgDcOqY2B1mIbC/LlMeE=
+			hVuwP5iUcc307YQJ4gfgg38dQbI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -104,7 +224,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YeVeAC38ZWPTlC1pzCMGRYHXyBc=
+			XPx5CH++zTiaNwc88G96T/g99J4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -113,7 +233,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I2XEIiljbYM8pZuYylhmCWfTZDE=
+			mx5OHNuq9pFbC4zXuMlq7hBp4I8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -131,7 +251,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			37BNAzZEtiIN+HH9pGv0NVu6EJs=
+			u/iZL6YPk/0zLlHSAwBBcEbkUAI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -140,7 +260,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cXbMYeNnpSMPzLBg9WYPRbQ5qYQ=
+			tRHGQIkOEXu+Q/evyRtiG/XJKJU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -149,7 +269,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JJv89PvPPQddBUADR+CJaC1t+Cg=
+			64uJVXgy+YAJQEOaCktm/T6X/A8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -158,14 +278,38 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lzxT6SC+uQhYdcvJlEIBMgHfMKo=
+			NhJ2sQ3geIuoFllBOwE02nrtxcw=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>NoContact.png</key>
+		<data>
+		zYRsatpHKjLUpF2znvklCVBw54M=
+		</data>
+		<key>NoSponsor.png</key>
+		<data>
+		9+w/7pPTvoAAPE6nvzZMv8s70WQ=
+		</data>
+		<key>NoTicket.png</key>
+		<data>
+		pURNFLGYu3mgPe4whW2Swt88PmI=
+		</data>
+		<key>NoWaiver.png</key>
+		<data>
+		P7hW21SyUprx1Ea9DA+IayAMMZE=
+		</data>
+		<key>codeday_logo.png</key>
+		<data>
+		22AKLyHj1ALWUY2XCjMJq0r4wZE=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		evviFt+DAraTi8Fl3hoMoaHcGI8=
+		</data>
+		<key>splash.png</key>
+		<data>
+		xQ03wTw0DIpP9VVRO3jBWV6OiIo=
 		</data>
 	</dict>
 	<key>rules</key>

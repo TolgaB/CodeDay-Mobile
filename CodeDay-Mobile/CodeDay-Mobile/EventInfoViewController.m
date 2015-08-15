@@ -102,13 +102,9 @@
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[resulting objectForKeyedSubscript:@"register"]]];
     }
     else {
-        UIView *contentView = [[UIView alloc] init];
-        contentView.frame = CGRectMake(0, 0, 200, 80);
-        contentView.backgroundColor = [UIColor whiteColor];
-        UILabel *errorLabel = [[UILabel alloc] initWithFrame:CGRectMake(22, 30, 300, 30)];
-        [errorLabel setText:@"Tickets Not Avalaible"];
-        [contentView addSubview:errorLabel];
-        KLCPopup* popup = [KLCPopup popupWithContentView:contentView];
+        UIImageView *error = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 275, 110)];
+        error.image = [UIImage imageNamed:@"NoTicket.png"];
+        KLCPopup* popup = [KLCPopup popupWithContentView:error];
         [popup show];
     }
 }
@@ -148,13 +144,9 @@
         [popup show];
     }
     else {
-        UIView *contentView = [[UIView alloc] init];
-        contentView.frame = CGRectMake(0, 0, 150, 80);
-        contentView.backgroundColor = [UIColor whiteColor];
-        UILabel *errorLabel = [[UILabel alloc] initWithFrame:CGRectMake(22, 30, 300, 30)];
-        [errorLabel setText:@"No Sponsors"];
-        [contentView addSubview:errorLabel];
-        KLCPopup* popup = [KLCPopup popupWithContentView:contentView];
+        UIImageView *error = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 275, 110)];
+        error.image = [UIImage imageNamed:@"NoSponsor.png"];
+        KLCPopup* popup = [KLCPopup popupWithContentView:error];
         [popup show];
     }
     NSLog(@"manual");
@@ -178,30 +170,27 @@
         [contentView addSubview:nameLabel];
         [contentView addSubview:emailLabel];
         [contentView addSubview:phoneLabel];
+        KLCPopup* popup = [KLCPopup popupWithContentView:contentView];
+        [popup show];
     }
     else {
-        contentView.frame = CGRectMake(0, 0, 200, 80);
-        UILabel *errorLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, 30, 150, 30)];
-        [errorLabel setText:@"No Data Found"];
-        [contentView addSubview:errorLabel];
+        UIImageView *error = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 275, 110)];
+        error.image = [UIImage imageNamed:@"NoContact.png"];
+        KLCPopup* popup = [KLCPopup popupWithContentView:error];
+        [popup show];
+    
     }
 
-    
-    KLCPopup* popup = [KLCPopup popupWithContentView:contentView];
-    [popup show];
+
 }
 - (IBAction)waiverButtonPressed:(id)sender {
     if ([retrievedData objectForKeyedSubscript:@"waiver"] != [NSNull null]) {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[retrievedData objectForKeyedSubscript:[retrievedData objectForKeyedSubscript:@"waiver"]]]];
     }
     else {
-        UIView* contentView = [[UIView alloc] init];
-        contentView.backgroundColor = [UIColor whiteColor];
-        contentView.frame = CGRectMake(0, 0, 200, 80);
-        UILabel *errorLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 25, 150, 30)];
-        [errorLabel setText:@"No Waiver"];
-        [contentView addSubview:errorLabel];
-        KLCPopup* popup = [KLCPopup popupWithContentView:contentView];
+        UIImageView *error = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 275, 110)];
+        error.image = [UIImage imageNamed:@"NoWaiver.png"];
+        KLCPopup* popup = [KLCPopup popupWithContentView:error];
         [popup show];
     }
 }

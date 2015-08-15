@@ -20,6 +20,11 @@
 		FDA57E721B7F171400691307 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E711B7F171400691307 /* ScheduleViewController.m */; };
 		FDCA1BDE1B7F5810004B683D /* codeday_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCA1BDD1B7F5810004B683D /* codeday_logo.png */; };
 		FDEAFD561B7FF79400E2CABC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFD551B7FF79400E2CABC /* Reachability.m */; };
+		FDEAFD5B1B7FFD0500E2CABC /* NoContact.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFD571B7FFD0500E2CABC /* NoContact.png */; };
+		FDEAFD5C1B7FFD0500E2CABC /* NoSponsor.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFD581B7FFD0500E2CABC /* NoSponsor.png */; };
+		FDEAFD5D1B7FFD0500E2CABC /* NoTicket.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFD591B7FFD0500E2CABC /* NoTicket.png */; };
+		FDEAFD5E1B7FFD0500E2CABC /* NoWaiver.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFD5A1B7FFD0500E2CABC /* NoWaiver.png */; };
+		FDEAFD601B8002F300E2CABC /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = FDEAFD5F1B8002F300E2CABC /* splash.png */; };
 		FEE87315C6297C2277CFB5BB /* libPods-CodeDay-Mobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2173FCC5DB7C4AA793F490 /* libPods-CodeDay-Mobile.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +65,11 @@
 		FDCA1BDD1B7F5810004B683D /* codeday_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeday_logo.png; sourceTree = "<group>"; };
 		FDEAFD541B7FF79400E2CABC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		FDEAFD551B7FF79400E2CABC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		FDEAFD571B7FFD0500E2CABC /* NoContact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoContact.png; sourceTree = "<group>"; };
+		FDEAFD581B7FFD0500E2CABC /* NoSponsor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoSponsor.png; sourceTree = "<group>"; };
+		FDEAFD591B7FFD0500E2CABC /* NoTicket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoTicket.png; sourceTree = "<group>"; };
+		FDEAFD5A1B7FFD0500E2CABC /* NoWaiver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoWaiver.png; sourceTree = "<group>"; };
+		FDEAFD5F1B8002F300E2CABC /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +154,11 @@
 		FDA57E421B7EEE6C00691307 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FDEAFD5F1B8002F300E2CABC /* splash.png */,
+				FDEAFD571B7FFD0500E2CABC /* NoContact.png */,
+				FDEAFD581B7FFD0500E2CABC /* NoSponsor.png */,
+				FDEAFD591B7FFD0500E2CABC /* NoTicket.png */,
+				FDEAFD5A1B7FFD0500E2CABC /* NoWaiver.png */,
 				FDCA1BDD1B7F5810004B683D /* codeday_logo.png */,
 				FDA57E6A1B7EF86F00691307 /* AppCommunicate.h */,
 				FDA57E6B1B7EF86F00691307 /* AppCommunicate.m */,
@@ -255,8 +270,13 @@
 			files = (
 				FDCA1BDE1B7F5810004B683D /* codeday_logo.png in Resources */,
 				FDA57E4E1B7EEE6C00691307 /* Main.storyboard in Resources */,
+				FDEAFD5E1B7FFD0500E2CABC /* NoWaiver.png in Resources */,
 				FDA57E531B7EEE6C00691307 /* LaunchScreen.xib in Resources */,
+				FDEAFD5C1B7FFD0500E2CABC /* NoSponsor.png in Resources */,
 				FDA57E501B7EEE6C00691307 /* Images.xcassets in Resources */,
+				FDEAFD5D1B7FFD0500E2CABC /* NoTicket.png in Resources */,
+				FDEAFD601B8002F300E2CABC /* splash.png in Resources */,
+				FDEAFD5B1B7FFD0500E2CABC /* NoContact.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

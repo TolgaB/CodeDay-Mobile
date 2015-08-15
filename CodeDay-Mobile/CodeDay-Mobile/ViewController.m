@@ -77,7 +77,7 @@
 
 -(void)generateRegionButtons {
     listOfEventID = [[NSMutableArray alloc] init];
-    UIScrollView *mainScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    UIScrollView *mainScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height + 100)];
     [mainScroll setBackgroundColor:[UIColor colorWithRed:252/255.0 green:118/255.0 blue:122/255.0 alpha:1.0]];
     NSDictionary *retrievedData = [_communicate getRegions];
     NSMutableArray *retrievedDataArray = retrievedData;
