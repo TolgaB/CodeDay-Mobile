@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -119,24 +120,6 @@
                                     <action selector="sponsorButtonPressed:" destination="dYF-3e-f4U" eventType="touchUpInside" id="oSQ-T5-DqD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OHq-po-WTh">
-                                <rect key="frame" x="186" y="431" width="118" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Awards">
-                                    <color key="titleColor" red="0.53725490200000003" green="0.75686274509999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="awardsButton:" destination="dYF-3e-f4U" eventType="touchUpInside" id="2MF-Tr-6gT"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bg0-YF-7iX">
                                 <rect key="frame" x="186" y="299" width="118" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -173,10 +156,36 @@
                                     <action selector="contactButtonPressed:" destination="dYF-3e-f4U" eventType="touchUpInside" id="KKR-Uv-79z"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OHq-po-WTh">
+                                <rect key="frame" x="186" y="431" width="118" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Awards">
+                                    <color key="titleColor" red="0.53725490200000003" green="0.75686274509999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="awardsButton:" destination="dYF-3e-f4U" eventType="touchUpInside" id="2MF-Tr-6gT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.53725490196078429" green="0.75686274509803919" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="awards" destination="OHq-po-WTh" id="nVf-DI-ZFU"/>
+                        <outlet property="buyticket" destination="p3M-cf-kR2" id="Gw6-kg-HfM"/>
+                        <outlet property="contact" destination="FDn-OT-nAe" id="Jw2-2K-teR"/>
+                        <outlet property="emergency" destination="eBi-OQ-Gka" id="Uem-vi-A9Z"/>
+                        <outlet property="location" destination="Bg0-YF-7iX" id="bvk-oZ-fFx"/>
+                        <outlet property="schedule" destination="gbo-Ma-Fuc" id="way-0i-pyv"/>
+                        <outlet property="sponsors" destination="QhJ-R2-m2a" id="7LR-Yi-jig"/>
+                        <outlet property="waiver" destination="ndc-3Q-uMD" id="gDG-RY-kba"/>
                         <segue destination="6Xx-Wm-qku" kind="modal" identifier="goToSchedule" id="kht-hR-ei4"/>
                     </connections>
                 </viewController>
@@ -203,11 +212,6 @@
             <point key="canvasLocation" x="442" y="886"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="qlo-ue-XSd"/>
     </inferredMetricsTieBreakers>

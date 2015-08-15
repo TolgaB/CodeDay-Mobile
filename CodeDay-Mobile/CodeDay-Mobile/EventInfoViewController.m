@@ -15,6 +15,14 @@
 @end
 @implementation EventInfoViewController {
     NSDictionary *retrievedData;
+    IBOutlet UIButton *schedule;
+    IBOutlet UIButton *contact;
+    IBOutlet UIButton *emergency;
+    IBOutlet UIButton *waiver;
+    IBOutlet UIButton *buyticket;
+    IBOutlet UIButton *location;
+    IBOutlet UIButton *sponsors;
+    IBOutlet UIButton *awards;
     __weak IBOutlet UILabel *eventNameLabel;
 }
 - (void)viewDidLoad {
@@ -42,6 +50,15 @@
     [self.view addSubview:navBar];
     
 }
+
+
+-(void) fix
+{
+    
+}
+
+
+
 - (IBAction)scheduleButtonPressed:(id)sender {
     [self performSegueWithIdentifier:@"goToSchedule" sender:@"self"];
 }
