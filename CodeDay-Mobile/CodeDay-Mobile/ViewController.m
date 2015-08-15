@@ -28,7 +28,8 @@
     CGFloat screenHeight = screenRect.size.height;
     [navBar setFrame:CGRectMake(0,0,screenWidth,(screenHeight/13))];
     UINavigationItem *navigationItem = [[UINavigationItem alloc] init];
-    navigationItem.title =  @"CodeDay";
+    UIImage *image = [UIImage imageNamed:@"codeday_logo.png"];
+    navigationItem.titleView = [[UIImageView alloc] initWithImage:image];
     [navBar pushNavigationItem:navigationItem animated:NO];
     [self.view addSubview:navBar];
     // Do any additional setup after loading the view, typically from a nib.
@@ -42,6 +43,7 @@
 -(void)generateRegionButtons {
     listOfEventID = [[NSMutableArray alloc] init];
     UIScrollView *mainScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    [mainScroll setBackgroundColor:[UIColor colorWithRed:252/255.0 green:118/255.0 blue:122/255.0 alpha:1.0]];
     NSDictionary *retrievedData = [_communicate getRegions];
     NSMutableArray *retrievedDataArray = retrievedData;
     int lastKnownHeight = 30;
@@ -51,11 +53,13 @@
         [listOfEventID addObject:[tempEventCurrent objectForKeyedSubscript:@"id"]];
         NSString *eventName = [tempEventDictionary objectForKeyedSubscript:@"name"];
         NSLog(@"%@", eventName);
-        UIButton *eventButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 230, lastKnownHeight + 30, 150, 30)];
+        UIButton *eventButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 230, lastKnownHeight + 25, 150, 30)];
         [eventButton.titleLabel setFont:[UIFont fontWithName:@"Thonburi-Light" size:20]];
+        [eventButton setTitleColor:[UIColor colorWithRed:252/255.0 green:118/255.0 blue:122/255.0 alpha:1.0] forState:UIControlStateNormal];
         UIView *backGround = [[UIView alloc] initWithFrame:CGRectMake(50, lastKnownHeight + 0, self.view.frame.size.width - 100, 80)];
         [backGround setBackgroundColor:[UIColor whiteColor]];
-        backGround.layer.masksToBounds = NO;
+        backGround.layer.cornerRadius = 5;
+       backGround.layer.masksToBounds = YES;
         backGround.layer.shadowColor = [UIColor blackColor].CGColor;
         backGround.layer.shadowOpacity = 0.1f;
         backGround.layer.shadowOffset = CGSizeMake(2.0f, 2.0f);
@@ -68,13 +72,12 @@
                         action:@selector(locationPressed:)
           forControlEvents:UIControlEventTouchUpInside];
          [eventButton setTitle:eventName forState:UIControlStateNormal];
-        [eventButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         lastKnownHeight = lastKnownHeight + 100;
         [mainScroll addSubview:eventButton];
     }
     
     [mainScroll setFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + 43, self.view.frame.size.width, 600)];
-    mainScroll.contentSize = CGSizeMake(self.view.frame.size.width, lastKnownHeight + 300);
+    mainScroll.contentSize = CGSizeMake(self.view.frame.size.width, lastKnownHeight + 100);
     mainScroll.scrollEnabled = YES;
     [mainScroll removeFromSuperview];
     mainScroll.tag = 8;

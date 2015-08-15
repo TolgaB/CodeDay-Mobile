@@ -17,7 +17,7 @@
 		FDA57E6C1B7EF86F00691307 /* AppCommunicate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E6B1B7EF86F00691307 /* AppCommunicate.m */; };
 		FDA57E6F1B7F042800691307 /* EventInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E6E1B7F042800691307 /* EventInfoViewController.m */; };
 		FDA57E721B7F171400691307 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E711B7F171400691307 /* ScheduleViewController.m */; };
-		FDCA1BD81B7F56EF004B683D /* codeday_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCA1BD71B7F56EF004B683D /* codeday_logo.png */; };
+		FDCA1BDE1B7F5810004B683D /* codeday_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCA1BDD1B7F5810004B683D /* codeday_logo.png */; };
 		FEE87315C6297C2277CFB5BB /* libPods-CodeDay-Mobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2173FCC5DB7C4AA793F490 /* libPods-CodeDay-Mobile.a */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +54,7 @@
 		FDA57E6E1B7F042800691307 /* EventInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventInfoViewController.m; sourceTree = "<group>"; };
 		FDA57E701B7F171400691307 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
 		FDA57E711B7F171400691307 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
-		FDCA1BD71B7F56EF004B683D /* codeday_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeday_logo.png; sourceTree = "<group>"; };
+		FDCA1BDD1B7F5810004B683D /* codeday_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeday_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +135,7 @@
 		FDA57E421B7EEE6C00691307 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FDCA1BD71B7F56EF004B683D /* codeday_logo.png */,
+				FDCA1BDD1B7F5810004B683D /* codeday_logo.png */,
 				FDA57E6A1B7EF86F00691307 /* AppCommunicate.h */,
 				FDA57E6B1B7EF86F00691307 /* AppCommunicate.m */,
 				FDA57E431B7EEE6C00691307 /* Info.plist */,
@@ -244,7 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDCA1BD81B7F56EF004B683D /* codeday_logo.png in Resources */,
+				FDCA1BDE1B7F5810004B683D /* codeday_logo.png in Resources */,
 				FDA57E4E1B7EEE6C00691307 /* Main.storyboard in Resources */,
 				FDA57E531B7EEE6C00691307 /* LaunchScreen.xib in Resources */,
 				FDA57E501B7EEE6C00691307 /* Images.xcassets in Resources */,
