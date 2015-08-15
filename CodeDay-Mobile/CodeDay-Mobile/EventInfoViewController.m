@@ -56,14 +56,21 @@
 - (IBAction)contactButtonPressed:(id)sender {
     UIView* contentView = [[UIView alloc] init];
     contentView.backgroundColor = [UIColor whiteColor];
-    contentView.frame = CGRectMake(0.0, 0.0, 400.0, 300.0);
+    contentView.frame = CGRectMake(0.0, 0.0, 250.0, 200.0);
     if ([retrievedData objectForKeyedSubscript:@"manager"] != [NSNull null]) {
     NSDictionary *managerDictionary = [retrievedData objectForKeyedSubscript:@"manager"];
     NSString *name = [managerDictionary objectForKeyedSubscript:@"name"];
     NSString *email = [managerDictionary objectForKeyedSubscript:@"email"];
     NSString *phone = [managerDictionary objectForKeyedSubscript:@"phone"];
-    UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 30, 200, 30)];
+    UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 30, 200, 30)];
     [nameLabel setText:name];
+        UILabel *emailLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 80, 200, 30)];
+        [emailLabel setText:email];
+        UILabel *phoneLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 130, 200, 30)];
+        [phoneLabel setText:phone];
+        [contentView addSubview:nameLabel];
+        [contentView addSubview:emailLabel];
+        [contentView addSubview:phoneLabel];
     }
 
     
