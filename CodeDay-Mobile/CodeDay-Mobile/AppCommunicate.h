@@ -13,4 +13,6 @@
 
 -(NSDictionary *)getRegions;
 
+-(NSDictionary *)getEventInfo:(NSString *)eventID;
+
 @end
