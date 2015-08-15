@@ -58,8 +58,8 @@
         // Update the UI on the main thread
         dispatch_async(dispatch_get_main_queue(), ^{
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No network connection"
-                                                            message:@"You must be connected to the internet to use this app."
-                                                           delegate:nil
+                                                            message:@"You must be connected to the internet to use the codedayApp."
+                                                           delegate:self
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
             [alert show];
@@ -130,6 +130,10 @@
 - (BOOL)prefersStatusBarHidden {
     //This hides the annoyign top status bar
     return YES;
+}
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    [self testInternetConnection];
 }
 
 @end
