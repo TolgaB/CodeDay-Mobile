@@ -29,6 +29,7 @@
     [super viewDidLoad];
     _communicate = [[AppCommunicate alloc] init];
     [self retrieveInfo];
+    [self fix];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -54,7 +55,32 @@
 
 -(void) fix
 {
+
     
+
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    float margin = screenRect.size.width - schedule.frame.size.width - schedule.frame.size.width;
+    margin = margin/3;
+    [self fixButton:schedule withMargin:margin];
+    [self fixButton:emergency withMargin:margin];
+    [self fixButton:buyticket withMargin:margin];
+    [self fixButton:sponsors withMargin:margin];
+    
+    [self fixButton2:contact withMargin:margin];
+    [self fixButton2:waiver withMargin:margin];
+    [self fixButton2:location withMargin:margin];
+    [self fixButton2:awards withMargin:margin];
+    
+}
+
+-(void) fixButton:(UIButton*) button withMargin:(float) margin
+{
+    button.frame = (CGRect){margin, button.frame.origin.y,button.frame.size.width,button.frame.size.height};
+}
+
+-(void) fixButton2:(UIButton*) button withMargin:(float) margin
+{
+    button.frame = (CGRect){margin + button.frame.size.width + margin, button.frame.origin.y,button.frame.size.width,button.frame.size.height};
 }
 
 
