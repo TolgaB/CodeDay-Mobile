@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A5E5CA41B7FF11800B904C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5E5CA31B7FF11800B904C4 /* SystemConfiguration.framework */; };
-		0A5E5CA71B7FF1AE00B904C4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5E5CA61B7FF1AE00B904C4 /* Reachability.m */; };
 		FDA57E451B7EEE6C00691307 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E441B7EEE6C00691307 /* main.m */; };
 		FDA57E481B7EEE6C00691307 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E471B7EEE6C00691307 /* AppDelegate.m */; };
 		FDA57E4B1B7EEE6C00691307 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E4A1B7EEE6C00691307 /* ViewController.m */; };
@@ -20,6 +19,7 @@
 		FDA57E6F1B7F042800691307 /* EventInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E6E1B7F042800691307 /* EventInfoViewController.m */; };
 		FDA57E721B7F171400691307 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E711B7F171400691307 /* ScheduleViewController.m */; };
 		FDCA1BDE1B7F5810004B683D /* codeday_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCA1BDD1B7F5810004B683D /* codeday_logo.png */; };
+		FDEAFD561B7FF79400E2CABC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEAFD551B7FF79400E2CABC /* Reachability.m */; };
 		FEE87315C6297C2277CFB5BB /* libPods-CodeDay-Mobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2173FCC5DB7C4AA793F490 /* libPods-CodeDay-Mobile.a */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +35,6 @@
 
 /* Begin PBXFileReference section */
 		0A5E5CA31B7FF11800B904C4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		0A5E5CA51B7FF1AE00B904C4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		0A5E5CA61B7FF1AE00B904C4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		1F8C250F1B7746D573D5D7A7 /* Pods-CodeDay-Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeDay-Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeDay-Mobile/Pods-CodeDay-Mobile.release.xcconfig"; sourceTree = "<group>"; };
 		2A139E743E23C178EB1CF79E /* Pods-CodeDay-Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeDay-Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeDay-Mobile/Pods-CodeDay-Mobile.debug.xcconfig"; sourceTree = "<group>"; };
 		8A2173FCC5DB7C4AA793F490 /* libPods-CodeDay-Mobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodeDay-Mobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +58,8 @@
 		FDA57E701B7F171400691307 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
 		FDA57E711B7F171400691307 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
 		FDCA1BDD1B7F5810004B683D /* codeday_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeday_logo.png; sourceTree = "<group>"; };
+		FDEAFD541B7FF79400E2CABC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		FDEAFD551B7FF79400E2CABC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +85,6 @@
 		1AFCC82C5302D1B9B961B60F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A5E5CA51B7FF1AE00B904C4 /* Reachability.h */,
-				0A5E5CA61B7FF1AE00B904C4 /* Reachability.m */,
 				0A5E5CA31B7FF11800B904C4 /* SystemConfiguration.framework */,
 				8A2173FCC5DB7C4AA793F490 /* libPods-CodeDay-Mobile.a */,
 			);
@@ -125,6 +123,8 @@
 		FDA57E411B7EEE6C00691307 /* CodeDay-Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				FDEAFD541B7FF79400E2CABC /* Reachability.h */,
+				FDEAFD551B7FF79400E2CABC /* Reachability.m */,
 				FDA57E461B7EEE6C00691307 /* AppDelegate.h */,
 				FDA57E471B7EEE6C00691307 /* AppDelegate.m */,
 				FDA57E491B7EEE6C00691307 /* ViewController.h */,
@@ -310,7 +310,7 @@
 				FDA57E4B1B7EEE6C00691307 /* ViewController.m in Sources */,
 				FDA57E721B7F171400691307 /* ScheduleViewController.m in Sources */,
 				FDA57E6F1B7F042800691307 /* EventInfoViewController.m in Sources */,
-				0A5E5CA71B7FF1AE00B904C4 /* Reachability.m in Sources */,
+				FDEAFD561B7FF79400E2CABC /* Reachability.m in Sources */,
 				FDA57E6C1B7EF86F00691307 /* AppCommunicate.m in Sources */,
 				FDA57E481B7EEE6C00691307 /* AppDelegate.m in Sources */,
 				FDA57E451B7EEE6C00691307 /* main.m in Sources */,

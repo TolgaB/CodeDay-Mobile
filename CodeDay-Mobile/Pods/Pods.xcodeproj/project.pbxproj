@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A5E5CB41B7FF63B00B904C4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5E5CB31B7FF63B00B904C4 /* Reachability.m */; };
 		30E91CA5581C3E7DF584FB06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9E1BFB3718DAC97C33123D /* Foundation.framework */; };
 		46D97D0DFDF85EB84C0921AB /* KLCPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = DD01540B4BD3599C48A08436 /* KLCPopup.h */; };
 		5FF8891C9E185FECB7BA5F3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9E1BFB3718DAC97C33123D /* Foundation.framework */; };
@@ -28,8 +27,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A5E5CB21B7FF63B00B904C4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		0A5E5CB31B7FF63B00B904C4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		274164920A4E4AA61DE4650E /* libPods-CodeDay-Mobile-KLCPopup.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodeDay-Mobile-KLCPopup.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		544604F0903BA9F59E0CE667 /* Pods-CodeDay-Mobile-KLCPopup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodeDay-Mobile-KLCPopup-dummy.m"; sourceTree = "<group>"; };
 		58896680E34941F907B27C71 /* libPods-CodeDay-Mobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodeDay-Mobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,8 +71,6 @@
 		1F37BDEE01CE0F47DC121CC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A5E5CB21B7FF63B00B904C4 /* Reachability.h */,
-				0A5E5CB31B7FF63B00B904C4 /* Reachability.m */,
 				3B9D402BC70422D377FA41CC /* iOS */,
 			);
 			name = Frameworks;
@@ -242,7 +237,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A5E5CB41B7FF63B00B904C4 /* Reachability.m in Sources */,
 				B0AA5F542C255210E56D2065 /* Pods-CodeDay-Mobile-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

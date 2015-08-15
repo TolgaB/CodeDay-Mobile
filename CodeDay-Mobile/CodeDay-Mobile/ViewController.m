@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "AppCommunicate.h"
 #import <QuartzCore/QuartzCore.h>
-
+#import "Reachability.h"
 
 @interface ViewController ()
 @property (nonatomic, strong)AppCommunicate *communicate;
@@ -48,7 +48,7 @@
     {
         // Update the UI on the main thread
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self generateRegionButtons]
+            [self generateRegionButtons];
         });
     };
     
