@@ -137,7 +137,7 @@
         [nameLabel sizeToFit];
         [mainScroll addSubview:contentView];
     }
-        mainScroll.contentSize = CGSizeMake(250.0, newHeight + 150);
+        mainScroll.contentSize = CGSizeMake(250.0, newHeight + 50);
         [mainScroll setBackgroundColor:[UIColor whiteColor]];
         mainScroll.scrollEnabled = YES;
         [mainScroll removeFromSuperview];
