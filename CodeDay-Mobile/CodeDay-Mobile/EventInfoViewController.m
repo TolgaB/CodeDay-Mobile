@@ -29,7 +29,15 @@
 -(void)retrieveInfo {
     NSString *theID = [[NSUserDefaults standardUserDefaults] objectForKey:@"id"];
     retrievedData = [_communicate getEventInfo:theID];
-    NSLog(@"manual");
+    UINavigationBar *navBar = [[UINavigationBar alloc] init];
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat screenWidth = screenRect.size.width;
+    CGFloat screenHeight = screenRect.size.height;
+    [navBar setFrame:CGRectMake(0,0,screenWidth,(screenHeight/13))];
+    UINavigationItem *navigationItem = [[UINavigationItem alloc] init];
+    navigationItem.title = [retrievedData objectForKeyedSubscript:@"name"];
+    [navBar pushNavigationItem:navigationItem animated:NO];
+    [self.view addSubview:navBar];
 }
 
 @end
