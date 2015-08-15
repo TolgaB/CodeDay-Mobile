@@ -38,4 +38,14 @@
     return retrievedData;
 }
 
+-(UIImage *)getImage:(NSString *)url {
+    NSString *restCallString = url;
+    NSURL *turl = [NSURL URLWithString:restCallString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:turl];
+    NSURLResponse* response;
+    NSError* error = nil;
+    NSData* result = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    UIImage *sponsorPhoto = [UIImage imageWithData:result];
+    return sponsorPhoto;
+}
 @end

@@ -54,12 +54,22 @@
 - (IBAction)buyTicketButtonPressed:(id)sender {
 }
 - (IBAction)sponsorButtonPressed:(id)sender {
+    UIView* contentView;
+    int newHeight = 0;
     NSMutableArray *sponsorArray = [retrievedData objectForKeyedSubscript:@"sponsors"];
     for (int l = 0; l < sponsorArray.count; l ++) {
         NSDictionary *tempEventInfo = sponsorArray[l];
-        NSLog(@"hello");
+        UIImage *logo = [_communicate getImage:[tempEventInfo objectForKeyedSubscript:@"logo"]];
+        NSString *name = [tempEventInfo objectForKeyedSubscript:@"name"];
+        contentView = [[UIView alloc] init];
+        contentView.backgroundColor = [UIColor whiteColor];
+        contentView.frame = CGRectMake(0.0, 0.0, 250.0, 200.0);
+        UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, newHeight + 30, 100, 30)];
+        [contentView addSubview:nameLabel];
         
     }
+    KLCPopup* popup = [KLCPopup popupWithContentView:contentView];
+    [popup show];
     NSLog(@"manual");
 }
 
