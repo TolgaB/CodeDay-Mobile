@@ -26,11 +26,61 @@
     navigationItem.title =  @"Schedule";
     [navBar pushNavigationItem:navigationItem animated:NO];
     [self.view addSubview:navBar];
+    [self loadData];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(void)loadData {
+    UIScrollView *mainScroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    NSDictionary *retrievedData = [_communicate getEventInfo:[[NSUserDefaults standardUserDefaults] objectForKey:@"id"]];
+    NSDictionary *scheduleDictionary = [retrievedData objectForKeyedSubscript:@"schedule"];
+    NSMutableArray *saturdayArray = [scheduleDictionary objectForKeyedSubscript:@"Saturday"];
+    NSMutableArray *sundayArray = [scheduleDictionary objectForKeyedSubscript:@"Sunday"];
+    int currentHeight = 0;
+    for (int i = 0; i < saturdayArray.count; i++) {
+        if (i == 0)
+        {
+            UILabel *headLabel = [[UILabel alloc] initWithFrame:CGRectMake(120, 40, 300, 30)];
+            [headLabel setText:@"Saturday"];
+            [mainScroll addSubview:headLabel];
+        }
+        NSDictionary *tempSchedule = saturdayArray[i];
+        NSString *timeString = [tempSchedule objectForKeyedSubscript:@"hour"];
+        NSString *titleString = [tempSchedule objectForKeyedSubscript:@"title"];
+        NSString *finalString = [NSString stringWithFormat:@"%@: %@", timeString, titleString];
+        UILabel *timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, currentHeight + 70, 300, 30)];
+        currentHeight = currentHeight + 50;
+        [timeLabel setText:finalString];
+        [mainScroll addSubview:timeLabel];
+    }
+    for (int u = 0; u < sundayArray.count; u++) {
+        if (u == 0)
+        {
+            UILabel *headLabel = [[UILabel alloc] initWithFrame:CGRectMake(120, currentHeight + 50, 300, 30)];
+            currentHeight = currentHeight + 10;
+            [headLabel setText:@"Sunday"];
+            [mainScroll addSubview:headLabel];
+        }
+        NSDictionary *tempSchedule = sundayArray[u];
+        NSString *timeString = [tempSchedule objectForKeyedSubscript:@"hour"];
+        NSString *titleString = [tempSchedule objectForKeyedSubscript:@"title"];
+        NSString *finalString = [NSString stringWithFormat:@"%@: %@", timeString, titleString];
+        UILabel *timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, currentHeight + 70, 300, 30)];
+        currentHeight = currentHeight + 50;
+        [timeLabel setText:finalString];
+        [mainScroll addSubview:timeLabel];
+    }
+    [mainScroll setFrame:CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + 43, self.view.frame.size.width, 600)];
+    mainScroll.contentSize = CGSizeMake(self.view.frame.size.width, currentHeight + 150);
+    mainScroll.scrollEnabled = YES;
+    [mainScroll removeFromSuperview];
+    mainScroll.tag = 8;
+    
+    [self.view addSubview:mainScroll];
+    NSLog(@"manual");
 }
 @end
