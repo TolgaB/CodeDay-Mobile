@@ -23,7 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _communicate = [[AppCommunicate alloc] init];
-    [self generateRegionButtons];
     UINavigationBar *navBar = [[UINavigationBar alloc] init];
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat screenWidth = screenRect.size.width;
@@ -49,7 +48,7 @@
     {
         // Update the UI on the main thread
         dispatch_async(dispatch_get_main_queue(), ^{
-            
+            [self generateRegionButtons]
         });
     };
     
@@ -58,12 +57,12 @@
     {
         // Update the UI on the main thread
         dispatch_async(dispatch_get_main_queue(), ^{
-            UIAlertView *theAlert = [[UIAlertView alloc] initWithTitle:@"No internet"
-                                                               message:@"Connect to internet!"
-                                                              delegate:self
-                                                     cancelButtonTitle:@"OK"
-                                                     otherButtonTitles:nil];
-            [theAlert show];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No network connection"
+                                                            message:@"You must be connected to the internet to use this app."
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
         });
     };
     
