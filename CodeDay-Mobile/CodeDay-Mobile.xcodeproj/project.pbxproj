@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDA57E451B7EEE6C00691307 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E441B7EEE6C00691307 /* main.m */; };
+		FDA57E481B7EEE6C00691307 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E471B7EEE6C00691307 /* AppDelegate.m */; };
+		FDA57E4B1B7EEE6C00691307 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E4A1B7EEE6C00691307 /* ViewController.m */; };
+		FDA57E4E1B7EEE6C00691307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA57E4C1B7EEE6C00691307 /* Main.storyboard */; };
+		FDA57E501B7EEE6C00691307 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA57E4F1B7EEE6C00691307 /* Images.xcassets */; };
+		FDA57E531B7EEE6C00691307 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDA57E511B7EEE6C00691307 /* LaunchScreen.xib */; };
+		FDA57E5F1B7EEE6C00691307 /* CodeDay_MobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E5E1B7EEE6C00691307 /* CodeDay_MobileTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDA57E591B7EEE6C00691307 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDA57E371B7EEE6C00691307 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA57E3E1B7EEE6C00691307;
+			remoteInfo = "CodeDay-Mobile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDA57E3F1B7EEE6C00691307 /* CodeDay-Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodeDay-Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA57E431B7EEE6C00691307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA57E441B7EEE6C00691307 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDA57E461B7EEE6C00691307 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FDA57E471B7EEE6C00691307 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FDA57E491B7EEE6C00691307 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FDA57E4A1B7EEE6C00691307 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FDA57E4D1B7EEE6C00691307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDA57E4F1B7EEE6C00691307 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FDA57E521B7EEE6C00691307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FDA57E581B7EEE6C00691307 /* CodeDay-MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodeDay-MobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA57E5D1B7EEE6C00691307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA57E5E1B7EEE6C00691307 /* CodeDay_MobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeDay_MobileTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDA57E3C1B7EEE6C00691307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA57E551B7EEE6C00691307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDA57E361B7EEE6C00691307 = {
+			isa = PBXGroup;
+			children = (
+				FDA57E411B7EEE6C00691307 /* CodeDay-Mobile */,
+				FDA57E5B1B7EEE6C00691307 /* CodeDay-MobileTests */,
+				FDA57E401B7EEE6C00691307 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDA57E401B7EEE6C00691307 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDA57E3F1B7EEE6C00691307 /* CodeDay-Mobile.app */,
+				FDA57E581B7EEE6C00691307 /* CodeDay-MobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDA57E411B7EEE6C00691307 /* CodeDay-Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				FDA57E461B7EEE6C00691307 /* AppDelegate.h */,
+				FDA57E471B7EEE6C00691307 /* AppDelegate.m */,
+				FDA57E491B7EEE6C00691307 /* ViewController.h */,
+				FDA57E4A1B7EEE6C00691307 /* ViewController.m */,
+				FDA57E4C1B7EEE6C00691307 /* Main.storyboard */,
+				FDA57E4F1B7EEE6C00691307 /* Images.xcassets */,
+				FDA57E511B7EEE6C00691307 /* LaunchScreen.xib */,
+				FDA57E421B7EEE6C00691307 /* Supporting Files */,
+			);
+			path = "CodeDay-Mobile";
+			sourceTree = "<group>";
+		};
+		FDA57E421B7EEE6C00691307 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDA57E431B7EEE6C00691307 /* Info.plist */,
+				FDA57E441B7EEE6C00691307 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDA57E5B1B7EEE6C00691307 /* CodeDay-MobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDA57E5E1B7EEE6C00691307 /* CodeDay_MobileTests.m */,
+				FDA57E5C1B7EEE6C00691307 /* Supporting Files */,
+			);
+			path = "CodeDay-MobileTests";
+			sourceTree = "<group>";
+		};
+		FDA57E5C1B7EEE6C00691307 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDA57E5D1B7EEE6C00691307 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDA57E3E1B7EEE6C00691307 /* CodeDay-Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA57E621B7EEE6C00691307 /* Build configuration list for PBXNativeTarget "CodeDay-Mobile" */;
+			buildPhases = (
+				FDA57E3B1B7EEE6C00691307 /* Sources */,
+				FDA57E3C1B7EEE6C00691307 /* Frameworks */,
+				FDA57E3D1B7EEE6C00691307 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CodeDay-Mobile";
+			productName = "CodeDay-Mobile";
+			productReference = FDA57E3F1B7EEE6C00691307 /* CodeDay-Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDA57E571B7EEE6C00691307 /* CodeDay-MobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA57E651B7EEE6C00691307 /* Build configuration list for PBXNativeTarget "CodeDay-MobileTests" */;
+			buildPhases = (
+				FDA57E541B7EEE6C00691307 /* Sources */,
+				FDA57E551B7EEE6C00691307 /* Frameworks */,
+				FDA57E561B7EEE6C00691307 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDA57E5A1B7EEE6C00691307 /* PBXTargetDependency */,
+			);
+			name = "CodeDay-MobileTests";
+			productName = "CodeDay-MobileTests";
+			productReference = FDA57E581B7EEE6C00691307 /* CodeDay-MobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDA57E371B7EEE6C00691307 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Tolga Beser";
+				TargetAttributes = {
+					FDA57E3E1B7EEE6C00691307 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					FDA57E571B7EEE6C00691307 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = FDA57E3E1B7EEE6C00691307;
+					};
+				};
+			};
+			buildConfigurationList = FDA57E3A1B7EEE6C00691307 /* Build configuration list for PBXProject "CodeDay-Mobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDA57E361B7EEE6C00691307;
+			productRefGroup = FDA57E401B7EEE6C00691307 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDA57E3E1B7EEE6C00691307 /* CodeDay-Mobile */,
+				FDA57E571B7EEE6C00691307 /* CodeDay-MobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDA57E3D1B7EEE6C00691307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA57E4E1B7EEE6C00691307 /* Main.storyboard in Resources */,
+				FDA57E531B7EEE6C00691307 /* LaunchScreen.xib in Resources */,
+				FDA57E501B7EEE6C00691307 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA57E561B7EEE6C00691307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDA57E3B1B7EEE6C00691307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA57E4B1B7EEE6C00691307 /* ViewController.m in Sources */,
+				FDA57E481B7EEE6C00691307 /* AppDelegate.m in Sources */,
+				FDA57E451B7EEE6C00691307 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA57E541B7EEE6C00691307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA57E5F1B7EEE6C00691307 /* CodeDay_MobileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDA57E5A1B7EEE6C00691307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDA57E3E1B7EEE6C00691307 /* CodeDay-Mobile */;
+			targetProxy = FDA57E591B7EEE6C00691307 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDA57E4C1B7EEE6C00691307 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDA57E4D1B7EEE6C00691307 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDA57E511B7EEE6C00691307 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDA57E521B7EEE6C00691307 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDA57E601B7EEE6C00691307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDA57E611B7EEE6C00691307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDA57E631B7EEE6C00691307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CodeDay-Mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FDA57E641B7EEE6C00691307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CodeDay-Mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FDA57E661B7EEE6C00691307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CodeDay-MobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeDay-Mobile.app/CodeDay-Mobile";
+			};
+			name = Debug;
+		};
+		FDA57E671B7EEE6C00691307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CodeDay-MobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeDay-Mobile.app/CodeDay-Mobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDA57E3A1B7EEE6C00691307 /* Build configuration list for PBXProject "CodeDay-Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA57E601B7EEE6C00691307 /* Debug */,
+				FDA57E611B7EEE6C00691307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA57E621B7EEE6C00691307 /* Build configuration list for PBXNativeTarget "CodeDay-Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA57E631B7EEE6C00691307 /* Debug */,
+				FDA57E641B7EEE6C00691307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDA57E651B7EEE6C00691307 /* Build configuration list for PBXNativeTarget "CodeDay-MobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA57E661B7EEE6C00691307 /* Debug */,
+				FDA57E671B7EEE6C00691307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDA57E371B7EEE6C00691307 /* Project object */;
+}
