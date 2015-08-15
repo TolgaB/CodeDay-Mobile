@@ -47,6 +47,8 @@
     [navBar setFrame:CGRectMake(0,0,screenWidth,(screenHeight/13))];
     UINavigationItem *navigationItem = [[UINavigationItem alloc] init];
     navigationItem.title = [retrievedData objectForKeyedSubscript:@"name"];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:self action:@selector(backButtonPressed)];
+    navigationItem.leftBarButtonItem = backButton;;
     [navBar pushNavigationItem:navigationItem animated:NO];
     [self.view addSubview:navBar];
     
@@ -95,11 +97,26 @@
 }
 
 - (IBAction)buyTicketButtonPressed:(id)sender {
+    NSDictionary *resulting = [retrievedData objectForKeyedSubscript:@"urls"];
+    if ([resulting objectForKeyedSubscript:@"register"] != [NSNull null]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[resulting objectForKeyedSubscript:@"register"]]];
+    }
+    else {
+        UIView *contentView = [[UIView alloc] init];
+        contentView.frame = CGRectMake(0, 0, 200, 80);
+        contentView.backgroundColor = [UIColor whiteColor];
+        UILabel *errorLabel = [[UILabel alloc] initWithFrame:CGRectMake(22, 30, 300, 30)];
+        [errorLabel setText:@"Tickets Not Avalaible"];
+        [contentView addSubview:errorLabel];
+        KLCPopup* popup = [KLCPopup popupWithContentView:contentView];
+        [popup show];
+    }
 }
 - (IBAction)sponsorButtonPressed:(id)sender {
     UIView* contentView;
     int newHeight = 0;
     NSMutableArray *sponsorArray = [retrievedData objectForKeyedSubscript:@"sponsors"];
+    if (sponsorArray.count > 0) {
     for (int l = 0; l < sponsorArray.count; l ++) {
         NSDictionary *tempEventInfo = sponsorArray[l];
         UIImage *logo = [_communicate getImage:[tempEventInfo objectForKeyedSubscript:@"logo"]];
@@ -111,7 +128,15 @@
         [nameLabel setText:name];
         [nameLabel setTextColor:[UIColor blackColor]];
         [contentView addSubview:nameLabel];
-        
+    }
+    }
+    else {
+        contentView = [[UIView alloc] init];
+        contentView.frame = CGRectMake(0, 0, 150, 80);
+        contentView.backgroundColor = [UIColor whiteColor];
+        UILabel *errorLabel = [[UILabel alloc] initWithFrame:CGRectMake(22, 30, 300, 30)];
+        [errorLabel setText:@"No Sponsors"];
+        [contentView addSubview:errorLabel];
     }
     KLCPopup* popup = [KLCPopup popupWithContentView:contentView];
     [popup show];
@@ -191,6 +216,9 @@
 - (BOOL)prefersStatusBarHidden {
     //This hides the annoyign top status bar
     return YES;
+}
+-(void)backButtonPressed {
+    [self performSegueWithIdentifier:@"eventToMain" sender:@"self"];
 }
 
 @end
