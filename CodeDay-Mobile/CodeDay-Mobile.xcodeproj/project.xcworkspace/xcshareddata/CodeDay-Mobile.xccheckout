@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D8E2118A-5AE4-465F-B4B2-252D6C031BAF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5BF1BFDF808BD4BC7474C4BFEBE3F4702D7225F5</key>
+		<string>https://github.com/TolgaB/CodeDay-Mobile.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CodeDay-Mobile/CodeDay-Mobile.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5BF1BFDF808BD4BC7474C4BFEBE3F4702D7225F5</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TolgaB/CodeDay-Mobile.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5BF1BFDF808BD4BC7474C4BFEBE3F4702D7225F5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5BF1BFDF808BD4BC7474C4BFEBE3F4702D7225F5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CodeDay-Mobile</string>
+		</dict>
+	</array>
+</dict>
+</plist>

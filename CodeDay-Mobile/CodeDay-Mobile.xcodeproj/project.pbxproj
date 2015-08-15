@@ -14,6 +14,7 @@
 		FDA57E501B7EEE6C00691307 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA57E4F1B7EEE6C00691307 /* Images.xcassets */; };
 		FDA57E531B7EEE6C00691307 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDA57E511B7EEE6C00691307 /* LaunchScreen.xib */; };
 		FDA57E5F1B7EEE6C00691307 /* CodeDay_MobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E5E1B7EEE6C00691307 /* CodeDay_MobileTests.m */; };
+		FDA57E6C1B7EF86F00691307 /* AppCommunicate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E6B1B7EF86F00691307 /* AppCommunicate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		FDA57E581B7EEE6C00691307 /* CodeDay-MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodeDay-MobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA57E5D1B7EEE6C00691307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDA57E5E1B7EEE6C00691307 /* CodeDay_MobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeDay_MobileTests.m; sourceTree = "<group>"; };
+		FDA57E6A1B7EF86F00691307 /* AppCommunicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCommunicate.h; sourceTree = "<group>"; };
+		FDA57E6B1B7EF86F00691307 /* AppCommunicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommunicate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 		FDA57E421B7EEE6C00691307 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FDA57E6A1B7EF86F00691307 /* AppCommunicate.h */,
+				FDA57E6B1B7EF86F00691307 /* AppCommunicate.m */,
 				FDA57E431B7EEE6C00691307 /* Info.plist */,
 				FDA57E441B7EEE6C00691307 /* main.m */,
 			);
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDA57E4B1B7EEE6C00691307 /* ViewController.m in Sources */,
+				FDA57E6C1B7EF86F00691307 /* AppCommunicate.m in Sources */,
 				FDA57E481B7EEE6C00691307 /* AppDelegate.m in Sources */,
 				FDA57E451B7EEE6C00691307 /* main.m in Sources */,
 			);
