@@ -117,29 +117,46 @@
     int newHeight = 0;
     NSMutableArray *sponsorArray = [retrievedData objectForKeyedSubscript:@"sponsors"];
     if (sponsorArray.count > 0) {
+        UIView *contentView = [[UIView alloc] init];
+         contentView.frame = CGRectMake(0.0, 0.0, 250.0, 400.0);
+         UIScrollView *mainScroll = [[UIScrollView alloc] initWithFrame:contentView.frame];
     for (int l = 0; l < sponsorArray.count; l ++) {
         NSDictionary *tempEventInfo = sponsorArray[l];
         UIImage *logo = [_communicate getImage:[tempEventInfo objectForKeyedSubscript:@"logo"]];
         NSString *name = [tempEventInfo objectForKeyedSubscript:@"name"];
-        contentView = [[UIView alloc] init];
         contentView.backgroundColor = [UIColor whiteColor];
-        contentView.frame = CGRectMake(0.0, 0.0, 250.0, 200.0);
-        UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, newHeight + 30, 100, 30)];
+        UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(80, newHeight + 30, 180, 30)];
+        UIImageView *sponsorImage = [[UIImageView alloc] initWithFrame:CGRectMake(70, newHeight + 70, 100, 100)];
+        sponsorImage.image = logo;
+        newHeight = newHeight + 200;
         [nameLabel setText:name];
         [nameLabel setTextColor:[UIColor blackColor]];
+        [contentView addSubview:sponsorImage];
         [contentView addSubview:nameLabel];
+        [nameLabel layoutIfNeeded];
+        [nameLabel sizeToFit];
+        [mainScroll addSubview:contentView];
     }
+        mainScroll.contentSize = CGSizeMake(250.0, newHeight + 150);
+        [mainScroll setBackgroundColor:[UIColor whiteColor]];
+        mainScroll.scrollEnabled = YES;
+        [mainScroll removeFromSuperview];
+        mainScroll.tag = 8;
+        
+
+        KLCPopup* popup = [KLCPopup popupWithContentView:mainScroll];
+        [popup show];
     }
     else {
-        contentView = [[UIView alloc] init];
+        UIView *contentView = [[UIView alloc] init];
         contentView.frame = CGRectMake(0, 0, 150, 80);
         contentView.backgroundColor = [UIColor whiteColor];
         UILabel *errorLabel = [[UILabel alloc] initWithFrame:CGRectMake(22, 30, 300, 30)];
         [errorLabel setText:@"No Sponsors"];
         [contentView addSubview:errorLabel];
+        KLCPopup* popup = [KLCPopup popupWithContentView:contentView];
+        [popup show];
     }
-    KLCPopup* popup = [KLCPopup popupWithContentView:contentView];
-    [popup show];
     NSLog(@"manual");
 }
 
