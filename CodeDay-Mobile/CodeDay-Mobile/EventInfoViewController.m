@@ -15,6 +15,14 @@
 @end
 @implementation EventInfoViewController {
     NSDictionary *retrievedData;
+    IBOutlet UIButton *schedule;
+    IBOutlet UIButton *contact;
+    IBOutlet UIButton *emergency;
+    IBOutlet UIButton *waiver;
+    IBOutlet UIButton *buyticket;
+    IBOutlet UIButton *location;
+    IBOutlet UIButton *sponsors;
+    IBOutlet UIButton *awards;
     __weak IBOutlet UILabel *eventNameLabel;
 }
 - (void)viewDidLoad {
@@ -42,6 +50,15 @@
     [self.view addSubview:navBar];
     
 }
+
+
+-(void) fix
+{
+    
+}
+
+
+
 - (IBAction)scheduleButtonPressed:(id)sender {
     [self performSegueWithIdentifier:@"goToSchedule" sender:@"self"];
 }
@@ -65,6 +82,8 @@
         contentView.backgroundColor = [UIColor whiteColor];
         contentView.frame = CGRectMake(0.0, 0.0, 250.0, 200.0);
         UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, newHeight + 30, 100, 30)];
+        [nameLabel setText:name];
+        [nameLabel setTextColor:[UIColor blackColor]];
         [contentView addSubview:nameLabel];
         
     }

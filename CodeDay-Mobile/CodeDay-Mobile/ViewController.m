@@ -53,7 +53,7 @@
         [listOfEventID addObject:[tempEventCurrent objectForKeyedSubscript:@"id"]];
         NSString *eventName = [tempEventDictionary objectForKeyedSubscript:@"name"];
         NSLog(@"%@", eventName);
-        UIButton *eventButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 230, lastKnownHeight + 25, 150, 30)];
+        UIButton *eventButton = [[UIButton alloc] initWithFrame:CGRectMake(50, lastKnownHeight + 25, self.view.frame.size.width - 100, 30)];
         [eventButton.titleLabel setFont:[UIFont fontWithName:@"Thonburi-Light" size:20]];
         [eventButton setTitleColor:[UIColor colorWithRed:252/255.0 green:118/255.0 blue:122/255.0 alpha:1.0] forState:UIControlStateNormal];
         UIView *backGround = [[UIView alloc] initWithFrame:CGRectMake(50, lastKnownHeight + 0, self.view.frame.size.width - 100, 80)];
