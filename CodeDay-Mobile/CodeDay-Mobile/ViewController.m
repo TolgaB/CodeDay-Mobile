@@ -34,7 +34,6 @@
     [navBar pushNavigationItem:navigationItem animated:NO];
     [self.view addSubview:navBar];
     [self testInternetConnection];
-    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
