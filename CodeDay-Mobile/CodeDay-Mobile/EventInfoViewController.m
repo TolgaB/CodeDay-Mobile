@@ -59,7 +59,10 @@
 {
 
     
-
+    if (self.view.frame.size.height == 480) {
+        [sponsors setFrame:CGRectMake(sponsors.frame.origin.x, sponsors.frame.origin.y - 30, sponsors.frame.size.width, sponsors.frame.size.height)];
+    }
+    else {
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     float margin = screenRect.size.width - schedule.frame.size.width - schedule.frame.size.width;
     margin = margin/3;
@@ -72,6 +75,7 @@
     [self fixButton2:waiver withMargin:margin];
     [self fixButton2:location withMargin:margin];
     [self fixButton2:awards withMargin:margin];
+    }
     
 }
 

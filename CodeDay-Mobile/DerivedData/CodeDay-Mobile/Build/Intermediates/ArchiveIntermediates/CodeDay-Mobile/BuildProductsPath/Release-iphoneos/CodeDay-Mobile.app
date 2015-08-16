@@ -1,0 +1,1 @@
+/Users/Tolga/Desktop/CodeDay-Mobile/CodeDay-Mobile/DerivedData/CodeDay-Mobile/Build/Intermediates/ArchiveIntermediates/CodeDay-Mobile/InstallationBuildProductsLocation/Applications/CodeDay-Mobile.app
