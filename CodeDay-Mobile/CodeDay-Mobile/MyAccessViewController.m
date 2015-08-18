@@ -7,6 +7,11 @@
 //
 
 #import "MyAccessViewController.h"
+#import "AppCommunicate.h"
+
+@interface MyAccessViewController ()
+@property (nonatomic, strong)AppCommunicate *communicate;
+@end
 
 @implementation MyAccessViewController {
     
@@ -16,11 +21,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _communicate = [[AppCommunicate alloc] init];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)enterButtonPressed:(id)sender {
+    NSDictionary *retrievedData = [_communicate getRegisterInfo:registrationTextField.text];
+    if (retrievedData != nil) {
+        [[NSUserDefaults standardUserDefaults] setObject:retrievedData forKey:@"userINFO"];
+        
+    }
+    NSLog(@"manual");
 }
 @end

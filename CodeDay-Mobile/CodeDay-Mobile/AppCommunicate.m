@@ -48,4 +48,16 @@
     UIImage *sponsorPhoto = [UIImage imageWithData:result];
     return sponsorPhoto;
 }
+-(NSDictionary *)getRegisterInfo:(NSString *)theID {
+    NSString *restCallString = [NSString stringWithFormat:@"https://clear.codeday.org/api/registration/%@?token=Iw7viYlxCYdRH1Zs6ZXxxKsfWcjv00wH&secret=9h4NdZBPC6B2hx7kNEHJcIEEwCiyWxvS", theID];
+    NSURL *url = [NSURL URLWithString:restCallString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLResponse* response;
+    NSError* error = nil;
+    NSData* result = [NSURLConnection sendSynchronousRequest:request  returningResponse:&response error:&error];
+    NSDictionary *retrievedData = [NSJSONSerialization JSONObjectWithData:result
+                                                                  options:0
+                                                                    error:NULL];
+    return retrievedData;
+}
 @end

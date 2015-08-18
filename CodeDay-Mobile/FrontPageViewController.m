@@ -23,6 +23,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)myCodeDayButtonPressed:(id)sender {
+    [self performSegueWithIdentifier:@"goToAccess" sender:@"self"];
 }
 - (IBAction)eventsButtonPressed:(id)sender {
     [self performSegueWithIdentifier:@"goToEventFromFront" sender:@"self"];

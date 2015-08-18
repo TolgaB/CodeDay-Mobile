@@ -10,6 +10,7 @@
 		0A5E5CA41B7FF11800B904C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5E5CA31B7FF11800B904C4 /* SystemConfiguration.framework */; };
 		FD30FBCD1B82EA3200A71E8D /* FrontPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD30FBCC1B82EA3200A71E8D /* FrontPageViewController.m */; };
 		FD30FBD01B82ECD300A71E8D /* MyAccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD30FBCF1B82ECD300A71E8D /* MyAccessViewController.m */; };
+		FD30FBD31B82EFD500A71E8D /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD30FBD21B82EFD500A71E8D /* UserViewController.m */; };
 		FDA57E451B7EEE6C00691307 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E441B7EEE6C00691307 /* main.m */; };
 		FDA57E481B7EEE6C00691307 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E471B7EEE6C00691307 /* AppDelegate.m */; };
 		FDA57E4B1B7EEE6C00691307 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA57E4A1B7EEE6C00691307 /* ViewController.m */; };
@@ -49,6 +50,8 @@
 		FD30FBCC1B82EA3200A71E8D /* FrontPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FrontPageViewController.m; path = ../FrontPageViewController.m; sourceTree = "<group>"; };
 		FD30FBCE1B82ECD300A71E8D /* MyAccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccessViewController.h; sourceTree = "<group>"; };
 		FD30FBCF1B82ECD300A71E8D /* MyAccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAccessViewController.m; sourceTree = "<group>"; };
+		FD30FBD11B82EFD500A71E8D /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		FD30FBD21B82EFD500A71E8D /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
 		FDA57E3F1B7EEE6C00691307 /* CodeDay-Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodeDay-Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA57E431B7EEE6C00691307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDA57E441B7EEE6C00691307 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				FD30FBCC1B82EA3200A71E8D /* FrontPageViewController.m */,
 				FD30FBCE1B82ECD300A71E8D /* MyAccessViewController.h */,
 				FD30FBCF1B82ECD300A71E8D /* MyAccessViewController.m */,
+				FD30FBD11B82EFD500A71E8D /* UserViewController.h */,
+				FD30FBD21B82EFD500A71E8D /* UserViewController.m */,
 				FDEAFD541B7FF79400E2CABC /* Reachability.h */,
 				FDEAFD551B7FF79400E2CABC /* Reachability.m */,
 				FDA57E461B7EEE6C00691307 /* AppDelegate.h */,
@@ -338,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDA57E4B1B7EEE6C00691307 /* ViewController.m in Sources */,
+				FD30FBD31B82EFD500A71E8D /* UserViewController.m in Sources */,
 				FD30FBCD1B82EA3200A71E8D /* FrontPageViewController.m in Sources */,
 				FD30FBD01B82ECD300A71E8D /* MyAccessViewController.m in Sources */,
 				FDA57E721B7F171400691307 /* ScheduleViewController.m in Sources */,

@@ -188,6 +188,9 @@
                                 <state key="normal" title="Enter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="enterButtonPressed:" destination="ohM-19-s73" eventType="touchUpInside" id="7T5-1o-89o"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your registration id" minimumFontSize="17" id="Ijb-No-Mmx">
                                 <rect key="frame" x="61" y="162" width="209" height="30"/>
@@ -264,6 +267,7 @@
                         <outlet property="eventsButton" destination="ezN-u1-ajM" id="6W8-OF-Mxp"/>
                         <outlet property="myCodeDayButton" destination="TrJ-Et-c7R" id="QaW-a1-yYI"/>
                         <segue destination="BYZ-38-t0r" kind="modal" identifier="goToEventFromFront" id="Ljo-B6-WW0"/>
+                        <segue destination="ohM-19-s73" kind="modal" identifier="goToAccess" id="3Dx-gU-GxR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yX-7u-h8b" userLabel="First Responder" sceneMemberID="firstResponder"/>

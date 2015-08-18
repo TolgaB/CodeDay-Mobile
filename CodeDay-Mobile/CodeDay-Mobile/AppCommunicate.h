@@ -16,4 +16,6 @@
 -(NSDictionary *)getEventInfo:(NSString *)eventID;
 
 -(UIImage *)getImage:(NSString *)url;
+
+-(NSDictionary *)getRegisterInfo:(NSString *)theID;
 @end
