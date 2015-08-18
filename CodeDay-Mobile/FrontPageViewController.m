@@ -8,6 +8,24 @@
 
 #import "FrontPageViewController.h"
 
-@implementation FrontPageViewController
+@implementation FrontPageViewController {
+    
+    __weak IBOutlet UIButton *eventsButton;
+    __weak IBOutlet UIButton *myCodeDayButton;
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+- (IBAction)myCodeDayButtonPressed:(id)sender {
+}
+- (IBAction)eventsButtonPressed:(id)sender {
+    [self performSegueWithIdentifier:@"goToEventFromFront" sender:@"self"];
+}
 
 @end

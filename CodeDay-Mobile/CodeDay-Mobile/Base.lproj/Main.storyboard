@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="9aF-lh-qdT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -174,6 +174,39 @@
             </objects>
             <point key="canvasLocation" x="571" y="181"/>
         </scene>
+        <!--My Access View Controller-->
+        <scene sceneID="kxD-m9-EgZ">
+            <objects>
+                <viewController id="ohM-19-s73" customClass="MyAccessViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2to-ws-bUs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dfn-YO-8l7">
+                                <rect key="frame" x="142" y="276" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your registration id" minimumFontSize="17" id="Ijb-No-Mmx">
+                                <rect key="frame" x="61" y="162" width="209" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.46274509803921571" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="enterButton" destination="dfn-YO-8l7" id="Mpq-DV-hnp"/>
+                        <outlet property="registrationTextField" destination="Ijb-No-Mmx" id="QiO-qg-LAZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M4Y-GX-bDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175" y="959"/>
+        </scene>
         <!--Schedule View Controller-->
         <scene sceneID="787-yy-w18">
             <objects>
@@ -192,6 +225,51 @@
             </objects>
             <point key="canvasLocation" x="442" y="886"/>
         </scene>
+        <!--Front Page View Controller-->
+        <scene sceneID="fMw-F0-vz2">
+            <objects>
+                <viewController id="9aF-lh-qdT" customClass="FrontPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lXt-Xs-C8B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ezN-u1-ajM">
+                                <rect key="frame" x="109" y="368" width="103" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Events">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="eventsButtonPressed:" destination="9aF-lh-qdT" eventType="touchUpInside" id="zGb-aT-aF2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TrJ-Et-c7R">
+                                <rect key="frame" x="81" y="80" width="159" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="MyCodeDay">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="myCodeDayButtonPressed:" destination="9aF-lh-qdT" eventType="touchUpInside" id="M2x-TT-0D1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="eventsButton" destination="ezN-u1-ajM" id="6W8-OF-Mxp"/>
+                        <outlet property="myCodeDayButton" destination="TrJ-Et-c7R" id="QaW-a1-yYI"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="goToEventFromFront" id="Ljo-B6-WW0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1yX-7u-h8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354" y="201"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -199,6 +277,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="qlo-ue-XSd"/>
+        <segue reference="nvk-Sz-InT"/>
+        <segue reference="Ljo-B6-WW0"/>
     </inferredMetricsTieBreakers>
 </document>
