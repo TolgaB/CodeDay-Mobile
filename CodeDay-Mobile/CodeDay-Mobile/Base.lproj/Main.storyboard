@@ -174,6 +174,20 @@
             </objects>
             <point key="canvasLocation" x="571" y="181"/>
         </scene>
+        <!--User View Controller-->
+        <scene sceneID="72i-T1-0ue">
+            <objects>
+                <viewController id="ISG-CA-0sO" customClass="UserViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g6Q-rY-Xhm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a12-hW-aXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-537" y="1299"/>
+        </scene>
         <!--My Access View Controller-->
         <scene sceneID="kxD-m9-EgZ">
             <objects>
@@ -204,6 +218,7 @@
                     <connections>
                         <outlet property="enterButton" destination="dfn-YO-8l7" id="Mpq-DV-hnp"/>
                         <outlet property="registrationTextField" destination="Ijb-No-Mmx" id="QiO-qg-LAZ"/>
+                        <segue destination="ISG-CA-0sO" kind="modal" identifier="goToUser" id="tZG-Hu-qe9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M4Y-GX-bDk" userLabel="First Responder" sceneMemberID="firstResponder"/>

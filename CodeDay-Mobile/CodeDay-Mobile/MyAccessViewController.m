@@ -32,7 +32,8 @@
 - (IBAction)enterButtonPressed:(id)sender {
     NSDictionary *retrievedData = [_communicate getRegisterInfo:registrationTextField.text];
     if (retrievedData != nil) {
-        [[NSUserDefaults standardUserDefaults] setObject:retrievedData forKey:@"userINFO"];
+        [[NSUserDefaults standardUserDefaults]setObject:registrationTextField.text forKey:@"userID"];
+        [self performSegueWithIdentifier:@"goToUser" sender:@"self"];
         
     }
     NSLog(@"manual");

@@ -81,10 +81,20 @@
     NSDictionary *retrievedData = [_communicate getRegions];
     NSMutableArray *retrievedDataArray = retrievedData;
     int lastKnownHeight = 30;
+    int actualForLoopCount = 0;
     for (int i =0 ; i < retrievedDataArray.count; i ++) {
         NSDictionary *tempEventDictionary = retrievedDataArray[i];
         NSDictionary *tempEventCurrent = [tempEventDictionary objectForKeyedSubscript:@"current_event"];
-        [listOfEventID addObject:[tempEventCurrent objectForKeyedSubscript:@"id"]];
+        if ([tempEventCurrent isKindOfClass:[NSNull class]]) {
+            continue;
+        }
+        else {
+             [listOfEventID addObject:[tempEventCurrent objectForKeyedSubscript:@"id"]];
+        }
+        if (i >0) {
+            actualForLoopCount++;
+        }
+        
         NSString *eventName = [tempEventDictionary objectForKeyedSubscript:@"name"];
         NSLog(@"%@", eventName);
         UIButton *eventButton = [[UIButton alloc] initWithFrame:CGRectMake(50, lastKnownHeight + 25, self.view.frame.size.width - 100, 30)];
@@ -101,7 +111,7 @@
         backGround.layer.shouldRasterize = NO;
         [backGround.layer setShadowOpacity:5];
         [mainScroll addSubview:backGround];
-        eventButton.tag = i;
+        eventButton.tag = actualForLoopCount;
         [eventButton addTarget:self
                         action:@selector(locationPressed:)
           forControlEvents:UIControlEventTouchUpInside];
