@@ -9,13 +9,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CodeDay-Mobile/ViewController.m"
-            timestampString = "464484568.017842"
+            filePath = "CodeDay-Mobile/MyAccessViewController.m"
+            timestampString = "465845010.928537"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
-            landmarkName = "-locationPressed:"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-enterButtonPressed:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodeDay-Mobile/UserViewController.m"
+            timestampString = "465845440.076016"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "-setUpUserValues"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
