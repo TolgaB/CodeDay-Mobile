@@ -22,13 +22,16 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setUpUserValues];
     _communicate = [[AppCommunicate alloc] init];
+    [self setUpUserValues];
 }
 
 -(void)setUpUserValues {
    userID = [[NSUserDefaults standardUserDefaults] objectForKey:@"userID"];
+    userInfo = [[NSDictionary alloc] init];
     userInfo = [_communicate getRegisterInfo:userID];
+    nameLabel.text = [userInfo objectForKeyedSubscript:@"name"];
+    emailLabel.text = [userInfo objectForKeyedSubscript:@"email"];
     NSLog(@"manual breakpoint");
 }
 
