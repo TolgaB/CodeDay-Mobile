@@ -34,6 +34,13 @@
     emailLabel.text = [userInfo objectForKeyedSubscript:@"email"];
     NSLog(@"manual breakpoint");
 }
+- (IBAction)eventPageButtonPressed:(id)sender {
+    NSDictionary *event = [[NSDictionary alloc] init];
+    event = [userInfo objectForKeyedSubscript:@"event"];
+    NSString *theID = [event objectForKeyedSubscript:@"id"];
+   [[NSUserDefaults standardUserDefaults] setObject:theID forKey:@"id"];
+    [self performSegueWithIdentifier:@"goToEventFromUser" sender:@"Self"];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

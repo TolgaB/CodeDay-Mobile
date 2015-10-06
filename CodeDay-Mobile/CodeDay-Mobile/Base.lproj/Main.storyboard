@@ -210,17 +210,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kTt-CW-yJ8">
+                                <rect key="frame" x="121" y="518" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Event Page">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="eventPageButtonPressed:" destination="ISG-CA-0sO" eventType="touchUpInside" id="UgF-lB-4zJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98823529481887817" green="0.46274510025978088" blue="0.47843137383460999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="emailLabel" destination="5aZ-xE-ras" id="wJO-vP-Z58"/>
                         <outlet property="nameLabel" destination="3df-5I-GRX" id="vci-rq-ux3"/>
+                        <segue destination="dYF-3e-f4U" kind="modal" identifier="goToEventFromUser" id="pc5-X9-qcw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a12-hW-aXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-577" y="1235"/>
+            <point key="canvasLocation" x="-581" y="1219"/>
         </scene>
         <!--My Access View Controller-->
         <scene sceneID="kxD-m9-EgZ">
@@ -330,7 +341,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="nvk-Sz-InT"/>
         <segue reference="Ljo-B6-WW0"/>
+        <segue reference="pc5-X9-qcw"/>
     </inferredMetricsTieBreakers>
 </document>
