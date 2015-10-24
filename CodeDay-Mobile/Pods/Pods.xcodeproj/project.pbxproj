@@ -7,152 +7,288 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30E91CA5581C3E7DF584FB06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9E1BFB3718DAC97C33123D /* Foundation.framework */; };
-		46D97D0DFDF85EB84C0921AB /* KLCPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = DD01540B4BD3599C48A08436 /* KLCPopup.h */; };
-		5FF8891C9E185FECB7BA5F3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9E1BFB3718DAC97C33123D /* Foundation.framework */; };
-		B0AA5F542C255210E56D2065 /* Pods-CodeDay-Mobile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76174538CFE33BFF78A44F16 /* Pods-CodeDay-Mobile-dummy.m */; };
-		C0D154CEC50692676598AF07 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ED0057BE4C3B434B887297 /* KLCPopup.m */; };
-		F1EB52E29DF500ECF1032B13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4BBE2924ADF03CC6840CCC5 /* UIKit.framework */; };
-		F84B73544CF5F127BD84F460 /* Pods-CodeDay-Mobile-KLCPopup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 544604F0903BA9F59E0CE667 /* Pods-CodeDay-Mobile-KLCPopup-dummy.m */; };
+		4279C57503999DC4CF4FD76E = {
+			isa = PBXBuildFile;
+			fileRef = 9EF2E2F92797719DDB79344B;
+		};
+		4B1B4AAE74E79158A30B0884 = {
+			isa = PBXBuildFile;
+			fileRef = 3E209E17239E298011BD41FE;
+		};
+		7DEE85085D3F13048C93C52D = {
+			isa = PBXBuildFile;
+			fileRef = ADABF0A84D893306DDBDA850;
+		};
+		85C9762E77238D58A853E6A8 = {
+			isa = PBXBuildFile;
+			fileRef = 3E209E17239E298011BD41FE;
+		};
+		B10F1CEA58FC9A3B33842627 = {
+			isa = PBXBuildFile;
+			fileRef = E6B975814AF27A8332FEBDBC;
+		};
+		E06346EB9A8167B440E3B3A4 = {
+			isa = PBXBuildFile;
+			fileRef = 6B4D10A7733AA66016A24781;
+		};
+		EC1251915F324E67AB12DDD5 = {
+			isa = PBXBuildFile;
+			fileRef = 575C1CF3BE72BAC523F3B920;
+		};
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5B6EB7D0CDFA5536AC7E664D /* PBXContainerItemProxy */ = {
+		350E854969AB51838370D231 = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DA9ECAC3A7CD472131A7F909 /* Project object */;
+			containerPortal = 15F75A28C2C7F7E9AC6E573C;
 			proxyType = 1;
-			remoteGlobalIDString = 03860444FB42BCC34D406466;
+			remoteGlobalIDString = 51296BFE565CBAC230F2D846;
 			remoteInfo = "Pods-CodeDay-Mobile-KLCPopup";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		274164920A4E4AA61DE4650E /* libPods-CodeDay-Mobile-KLCPopup.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodeDay-Mobile-KLCPopup.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		544604F0903BA9F59E0CE667 /* Pods-CodeDay-Mobile-KLCPopup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodeDay-Mobile-KLCPopup-dummy.m"; sourceTree = "<group>"; };
-		58896680E34941F907B27C71 /* libPods-CodeDay-Mobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodeDay-Mobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		602FBA5D62D4A5E854171836 /* Pods-CodeDay-Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodeDay-Mobile.release.xcconfig"; sourceTree = "<group>"; };
-		72011555166DCB5AF8158A4A /* Pods-CodeDay-Mobile-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodeDay-Mobile-acknowledgements.plist"; sourceTree = "<group>"; };
-		76174538CFE33BFF78A44F16 /* Pods-CodeDay-Mobile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodeDay-Mobile-dummy.m"; sourceTree = "<group>"; };
-		7D9E1BFB3718DAC97C33123D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8BD7704C841F2F60E19D63DB /* Pods-CodeDay-Mobile-KLCPopup-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodeDay-Mobile-KLCPopup-Private.xcconfig"; sourceTree = "<group>"; };
-		A318A1C6880FE5D71966EA3B /* Pods-CodeDay-Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodeDay-Mobile.debug.xcconfig"; sourceTree = "<group>"; };
-		A3BFE079FCF7CC4EB0E273F0 /* Pods-CodeDay-Mobile-KLCPopup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodeDay-Mobile-KLCPopup-prefix.pch"; sourceTree = "<group>"; };
-		B5AA8BEF9B230DD2802A0180 /* Pods-CodeDay-Mobile-KLCPopup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodeDay-Mobile-KLCPopup.xcconfig"; sourceTree = "<group>"; };
-		B9ED0057BE4C3B434B887297 /* KLCPopup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KLCPopup.m; path = KLCPopup/KLCPopup.m; sourceTree = "<group>"; };
-		C32A7D0B26BCBBFF53AD0F4D /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C9D992775FBB7A5348E75612 /* Pods-CodeDay-Mobile-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodeDay-Mobile-environment.h"; sourceTree = "<group>"; };
-		D4BBE2924ADF03CC6840CCC5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		DD01540B4BD3599C48A08436 /* KLCPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KLCPopup.h; path = KLCPopup/KLCPopup.h; sourceTree = "<group>"; };
-		DFDE092EF3F0F3EBDCCEC31D /* Pods-CodeDay-Mobile-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodeDay-Mobile-resources.sh"; sourceTree = "<group>"; };
-		F7B8C8E7C3F8F6AF867A4499 /* Pods-CodeDay-Mobile-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodeDay-Mobile-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1C9775EF0AAC646AF5C52FE3 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.h;
+			path = "Pods-CodeDay-Mobile-KLCPopup-prefix.pch";
+			sourceTree = "<group>";
+		};
+		341F8DFD51D2A093A257B763 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text;
+			path = "Pods-CodeDay-Mobile-acknowledgements.markdown";
+			sourceTree = "<group>";
+		};
+		3E209E17239E298011BD41FE = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Foundation.framework;
+			path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework;
+			sourceTree = DEVELOPER_DIR;
+		};
+		575C1CF3BE72BAC523F3B920 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.objc;
+			path = "Pods-CodeDay-Mobile-dummy.m";
+			sourceTree = "<group>";
+		};
+		62E497C84601A77A26722574 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.plist.xml;
+			path = "Pods-CodeDay-Mobile-acknowledgements.plist";
+			sourceTree = "<group>";
+		};
+		6B4D10A7733AA66016A24781 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.objc;
+			path = "Pods-CodeDay-Mobile-KLCPopup-dummy.m";
+			sourceTree = "<group>";
+		};
+		6E52B65B64814B54E01F5DAC = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.script.sh;
+			path = "Pods-CodeDay-Mobile-resources.sh";
+			sourceTree = "<group>";
+		};
+		6EB1CCF58791AB8D621BC711 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text;
+			name = Podfile;
+			path = ../Podfile;
+			sourceTree = SOURCE_ROOT;
+			xcLanguageSpecificationIdentifier = xcode.lang.ruby;
+		};
+		7922E98C1A53E25C4099AFE9 = {
+			isa = PBXFileReference;
+			explicitFileType = archive.ar;
+			includeInIndex = 0;
+			name = "libPods-CodeDay-Mobile-KLCPopup.a";
+			path = "libPods-CodeDay-Mobile-KLCPopup.a";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7C496F9AC74E098F6777EFD6 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.xcconfig;
+			path = "Pods-CodeDay-Mobile.release.xcconfig";
+			sourceTree = "<group>";
+		};
+		8872A23D3DA392D43A943058 = {
+			isa = PBXFileReference;
+			explicitFileType = archive.ar;
+			includeInIndex = 0;
+			name = "libPods-CodeDay-Mobile.a";
+			path = "libPods-CodeDay-Mobile.a";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		89BBF688847F23644BBF2697 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.xcconfig;
+			path = "Pods-CodeDay-Mobile.debug.xcconfig";
+			sourceTree = "<group>";
+		};
+		9EF2E2F92797719DDB79344B = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.h;
+			name = KLCPopup.h;
+			path = KLCPopup/KLCPopup.h;
+			sourceTree = "<group>";
+		};
+		ADABF0A84D893306DDBDA850 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.objc;
+			name = KLCPopup.m;
+			path = KLCPopup/KLCPopup.m;
+			sourceTree = "<group>";
+		};
+		DAB69FBA49E60C0B286891E9 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = sourcecode.c.h;
+			path = "Pods-CodeDay-Mobile-environment.h";
+			sourceTree = "<group>";
+		};
+		DF3AFB002C309F84C923DA29 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.xcconfig;
+			path = "Pods-CodeDay-Mobile-KLCPopup.xcconfig";
+			sourceTree = "<group>";
+		};
+		E1AF6E2CBD6A7998FD711782 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.xcconfig;
+			path = "Pods-CodeDay-Mobile-KLCPopup-Private.xcconfig";
+			sourceTree = "<group>";
+		};
+		E6B975814AF27A8332FEBDBC = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = UIKit.framework;
+			path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework;
+			sourceTree = DEVELOPER_DIR;
+		};
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3AC5AF047E4144BF282D9986 /* Frameworks */ = {
+		07CF28373355036BE5374484 = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30E91CA5581C3E7DF584FB06 /* Foundation.framework in Frameworks */,
-				F1EB52E29DF500ECF1032B13 /* UIKit.framework in Frameworks */,
+				85C9762E77238D58A853E6A8,
+				B10F1CEA58FC9A3B33842627,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4233230D6EF4B31BDD6707E9 /* Frameworks */ = {
+		55AE95E86C85831A060EBD8F = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FF8891C9E185FECB7BA5F3C /* Foundation.framework in Frameworks */,
+				4B1B4AAE74E79158A30B0884,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F37BDEE01CE0F47DC121CC2 /* Frameworks */ = {
+		1DF433658F970E9D7D39D29B = {
 			isa = PBXGroup;
 			children = (
-				3B9D402BC70422D377FA41CC /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2BF0153AC0A41D4690C902A9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B5AA8BEF9B230DD2802A0180 /* Pods-CodeDay-Mobile-KLCPopup.xcconfig */,
-				8BD7704C841F2F60E19D63DB /* Pods-CodeDay-Mobile-KLCPopup-Private.xcconfig */,
-				544604F0903BA9F59E0CE667 /* Pods-CodeDay-Mobile-KLCPopup-dummy.m */,
-				A3BFE079FCF7CC4EB0E273F0 /* Pods-CodeDay-Mobile-KLCPopup-prefix.pch */,
+				DF3AFB002C309F84C923DA29,
+				E1AF6E2CBD6A7998FD711782,
+				6B4D10A7733AA66016A24781,
+				1C9775EF0AAC646AF5C52FE3,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-CodeDay-Mobile-KLCPopup";
 			sourceTree = "<group>";
 		};
-		3B9D402BC70422D377FA41CC /* iOS */ = {
+		2171E4F2CF7E5E5363A2347F = {
 			isa = PBXGroup;
 			children = (
-				7D9E1BFB3718DAC97C33123D /* Foundation.framework */,
-				D4BBE2924ADF03CC6840CCC5 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		7758AB28398B9FD0DB457E4E /* KLCPopup */ = {
-			isa = PBXGroup;
-			children = (
-				DD01540B4BD3599C48A08436 /* KLCPopup.h */,
-				B9ED0057BE4C3B434B887297 /* KLCPopup.m */,
-				2BF0153AC0A41D4690C902A9 /* Support Files */,
-			);
-			path = KLCPopup;
-			sourceTree = "<group>";
-		};
-		9361E8E4988E6B4650615F85 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				58896680E34941F907B27C71 /* libPods-CodeDay-Mobile.a */,
-				274164920A4E4AA61DE4650E /* libPods-CodeDay-Mobile-KLCPopup.a */,
+				8872A23D3DA392D43A943058,
+				7922E98C1A53E25C4099AFE9,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A8E2DAB3A152E060C0F94379 /* Targets Support Files */ = {
+		5728625E755A81109F30016C = {
 			isa = PBXGroup;
 			children = (
-				F7E0E31F7B116DA87C11D9C6 /* Pods-CodeDay-Mobile */,
+				9EF2E2F92797719DDB79344B,
+				ADABF0A84D893306DDBDA850,
+				1DF433658F970E9D7D39D29B,
 			);
-			name = "Targets Support Files";
+			name = KLCPopup;
+			path = KLCPopup;
 			sourceTree = "<group>";
 		};
-		CACFECBBA56869910C0BDD05 /* Pods */ = {
+		713C45B98388547BC8C840DD = {
 			isa = PBXGroup;
 			children = (
-				7758AB28398B9FD0DB457E4E /* KLCPopup */,
+				5728625E755A81109F30016C,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		D807F355D66AB094425248CE = {
+		A8F5BDF00428A5E88E9D98C6 = {
 			isa = PBXGroup;
 			children = (
-				C32A7D0B26BCBBFF53AD0F4D /* Podfile */,
-				1F37BDEE01CE0F47DC121CC2 /* Frameworks */,
-				CACFECBBA56869910C0BDD05 /* Pods */,
-				9361E8E4988E6B4650615F85 /* Products */,
-				A8E2DAB3A152E060C0F94379 /* Targets Support Files */,
+				B618D6FA3CD646F1AC98179C,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B618D6FA3CD646F1AC98179C = {
+			isa = PBXGroup;
+			children = (
+				3E209E17239E298011BD41FE,
+				E6B975814AF27A8332FEBDBC,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BA9249D45F3AE97AC57D85E3 = {
+			isa = PBXGroup;
+			children = (
+				DE324A4301BF9BE0E8A0E161,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C517B054599D0AB174F0CED2 = {
+			isa = PBXGroup;
+			children = (
+				6EB1CCF58791AB8D621BC711,
+				A8F5BDF00428A5E88E9D98C6,
+				713C45B98388547BC8C840DD,
+				2171E4F2CF7E5E5363A2347F,
+				BA9249D45F3AE97AC57D85E3,
 			);
 			sourceTree = "<group>";
 		};
-		F7E0E31F7B116DA87C11D9C6 /* Pods-CodeDay-Mobile */ = {
+		DE324A4301BF9BE0E8A0E161 = {
 			isa = PBXGroup;
 			children = (
-				F7B8C8E7C3F8F6AF867A4499 /* Pods-CodeDay-Mobile-acknowledgements.markdown */,
-				72011555166DCB5AF8158A4A /* Pods-CodeDay-Mobile-acknowledgements.plist */,
-				76174538CFE33BFF78A44F16 /* Pods-CodeDay-Mobile-dummy.m */,
-				C9D992775FBB7A5348E75612 /* Pods-CodeDay-Mobile-environment.h */,
-				DFDE092EF3F0F3EBDCCEC31D /* Pods-CodeDay-Mobile-resources.sh */,
-				A318A1C6880FE5D71966EA3B /* Pods-CodeDay-Mobile.debug.xcconfig */,
-				602FBA5D62D4A5E854171836 /* Pods-CodeDay-Mobile.release.xcconfig */,
+				341F8DFD51D2A093A257B763,
+				62E497C84601A77A26722574,
+				575C1CF3BE72BAC523F3B920,
+				DAB69FBA49E60C0B286891E9,
+				6E52B65B64814B54E01F5DAC,
+				89BBF688847F23644BBF2697,
+				7C496F9AC74E098F6777EFD6,
 			);
 			name = "Pods-CodeDay-Mobile";
 			path = "Target Support Files/Pods-CodeDay-Mobile";
@@ -161,24 +297,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		62C7A327126F9CBA10C13B60 /* Headers */ = {
+		39FDDD6673E18F1961674643 = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46D97D0DFDF85EB84C0921AB /* KLCPopup.h in Headers */,
+				4279C57503999DC4CF4FD76E,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		03860444FB42BCC34D406466 /* Pods-CodeDay-Mobile-KLCPopup */ = {
+		51296BFE565CBAC230F2D846 = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E5B2AA7BD5B8D7B5430C296 /* Build configuration list for PBXNativeTarget "Pods-CodeDay-Mobile-KLCPopup" */;
+			buildConfigurationList = B4EDFAB78D800BFEA03FB1AD;
 			buildPhases = (
-				F3A4CC561752B0A28771C6ED /* Sources */,
-				3AC5AF047E4144BF282D9986 /* Frameworks */,
-				62C7A327126F9CBA10C13B60 /* Headers */,
+				65660B6277F694E33458F4DB,
+				07CF28373355036BE5374484,
+				39FDDD6673E18F1961674643,
 			);
 			buildRules = (
 			);
@@ -186,115 +322,85 @@
 			);
 			name = "Pods-CodeDay-Mobile-KLCPopup";
 			productName = "Pods-CodeDay-Mobile-KLCPopup";
-			productReference = 274164920A4E4AA61DE4650E /* libPods-CodeDay-Mobile-KLCPopup.a */;
+			productReference = 7922E98C1A53E25C4099AFE9;
 			productType = "com.apple.product-type.library.static";
 		};
-		6BFFABF66AC03CC865001B03 /* Pods-CodeDay-Mobile */ = {
+		9EAE407E41D978DA44888DD0 = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C6EE672FC580B1492A81E38 /* Build configuration list for PBXNativeTarget "Pods-CodeDay-Mobile" */;
+			buildConfigurationList = DFFEA8A0914E471B658A7807;
 			buildPhases = (
-				2243B0DBD602B92FC2B9D43B /* Sources */,
-				4233230D6EF4B31BDD6707E9 /* Frameworks */,
+				CC2E5125EEFD9727AAE2F325,
+				55AE95E86C85831A060EBD8F,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				ACECE4A725E9D7A29C3941A1 /* PBXTargetDependency */,
+				010ED21B90F0EFA2ECAA0550,
 			);
 			name = "Pods-CodeDay-Mobile";
 			productName = "Pods-CodeDay-Mobile";
-			productReference = 58896680E34941F907B27C71 /* libPods-CodeDay-Mobile.a */;
+			productReference = 8872A23D3DA392D43A943058;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DA9ECAC3A7CD472131A7F909 /* Project object */ = {
+		15F75A28C2C7F7E9AC6E573C = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 2B0B8C9A5CFD08113424FE2E /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = D7939CBCBC8FFFC75C8B44E2;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = D807F355D66AB094425248CE;
-			productRefGroup = 9361E8E4988E6B4650615F85 /* Products */;
+			mainGroup = C517B054599D0AB174F0CED2;
+			productRefGroup = 2171E4F2CF7E5E5363A2347F;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
-				6BFFABF66AC03CC865001B03 /* Pods-CodeDay-Mobile */,
-				03860444FB42BCC34D406466 /* Pods-CodeDay-Mobile-KLCPopup */,
+				9EAE407E41D978DA44888DD0,
+				51296BFE565CBAC230F2D846,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2243B0DBD602B92FC2B9D43B /* Sources */ = {
+		65660B6277F694E33458F4DB = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0AA5F542C255210E56D2065 /* Pods-CodeDay-Mobile-dummy.m in Sources */,
+				7DEE85085D3F13048C93C52D,
+				E06346EB9A8167B440E3B3A4,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3A4CC561752B0A28771C6ED /* Sources */ = {
+		CC2E5125EEFD9727AAE2F325 = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0D154CEC50692676598AF07 /* KLCPopup.m in Sources */,
-				F84B73544CF5F127BD84F460 /* Pods-CodeDay-Mobile-KLCPopup-dummy.m in Sources */,
+				EC1251915F324E67AB12DDD5,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ACECE4A725E9D7A29C3941A1 /* PBXTargetDependency */ = {
+		010ED21B90F0EFA2ECAA0550 = {
 			isa = PBXTargetDependency;
 			name = "Pods-CodeDay-Mobile-KLCPopup";
-			target = 03860444FB42BCC34D406466 /* Pods-CodeDay-Mobile-KLCPopup */;
-			targetProxy = 5B6EB7D0CDFA5536AC7E664D /* PBXContainerItemProxy */;
+			target = 51296BFE565CBAC230F2D846;
+			targetProxy = 350E854969AB51838370D231;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1ABA4F2C11F9D4D7B159AEF7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A318A1C6880FE5D71966EA3B /* Pods-CodeDay-Mobile.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		35E42E10EDB7CC09C3038100 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BD7704C841F2F60E19D63DB /* Pods-CodeDay-Mobile-KLCPopup-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-CodeDay-Mobile-KLCPopup/Pods-CodeDay-Mobile-KLCPopup-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		65AF6C6DFC57E88DE524F879 /* Release */ = {
+		1A379B535A3B0445AE5DB25E = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -314,42 +420,28 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"RELEASE=1",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		6F1BF5540C6D276001A3EA2D /* Release */ = {
+		22F88FB4F7F22E67B7C0E1DC = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BD7704C841F2F60E19D63DB /* Pods-CodeDay-Mobile-KLCPopup-Private.xcconfig */;
+			baseConfigurationReference = 7C496F9AC74E098F6777EFD6;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-CodeDay-Mobile-KLCPopup/Pods-CodeDay-Mobile-KLCPopup-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		BF6FDA0D07B0E7F06E133E67 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 602FBA5D62D4A5E854171836 /* Pods-CodeDay-Mobile.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -360,7 +452,23 @@
 			};
 			name = Release;
 		};
-		FB2C38E913BD3CF5A4363985 /* Debug */ = {
+		3897129287F23B363246A550 = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1AF6E2CBD6A7998FD711782;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CodeDay-Mobile-KLCPopup/Pods-CodeDay-Mobile-KLCPopup-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		865C427444208D3A223C1989 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -392,44 +500,76 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
+		A4C4EA256500EB7BFA1D8F1C = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1AF6E2CBD6A7998FD711782;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CodeDay-Mobile-KLCPopup/Pods-CodeDay-Mobile-KLCPopup-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D2AF9DF44BAE5CA89A4E4B99 = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89BBF688847F23644BBF2697;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B0B8C9A5CFD08113424FE2E /* Build configuration list for PBXProject "Pods" */ = {
+		B4EDFAB78D800BFEA03FB1AD = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB2C38E913BD3CF5A4363985 /* Debug */,
-				65AF6C6DFC57E88DE524F879 /* Release */,
+				3897129287F23B363246A550,
+				A4C4EA256500EB7BFA1D8F1C,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C6EE672FC580B1492A81E38 /* Build configuration list for PBXNativeTarget "Pods-CodeDay-Mobile" */ = {
+		D7939CBCBC8FFFC75C8B44E2 = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1ABA4F2C11F9D4D7B159AEF7 /* Debug */,
-				BF6FDA0D07B0E7F06E133E67 /* Release */,
+				865C427444208D3A223C1989,
+				1A379B535A3B0445AE5DB25E,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E5B2AA7BD5B8D7B5430C296 /* Build configuration list for PBXNativeTarget "Pods-CodeDay-Mobile-KLCPopup" */ = {
+		DFFEA8A0914E471B658A7807 = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				35E42E10EDB7CC09C3038100 /* Debug */,
-				6F1BF5540C6D276001A3EA2D /* Release */,
+				D2AF9DF44BAE5CA89A4E4B99,
+				22F88FB4F7F22E67B7C0E1DC,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DA9ECAC3A7CD472131A7F909 /* Project object */;
+	rootObject = 15F75A28C2C7F7E9AC6E573C;
 }

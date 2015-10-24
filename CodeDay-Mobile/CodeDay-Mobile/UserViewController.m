@@ -40,6 +40,10 @@
     NSString *theID = [event objectForKeyedSubscript:@"id"];
    [[NSUserDefaults standardUserDefaults] setObject:theID forKey:@"id"];
     [self performSegueWithIdentifier:@"goToEventFromUser" sender:@"Self"];
+    
+   
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
